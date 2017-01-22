@@ -1,4 +1,7 @@
 import urllib.request
+import ssl
+
+ssl._create_default_https_context = ssl._create_unverified_context
 
 f_units = open('laitokset.txt', 'r', encoding='utf-8')
 

@@ -1,4 +1,7 @@
 import urllib.request
+import ssl
+
+ssl._create_default_https_context = ssl._create_unverified_context
 
 f_courses = open('course_urls.txt', 'r', encoding='utf-8')
 
@@ -77,6 +80,15 @@ for line in f_courses:
         f_out.write(';')
 
     search = 'Credits:</b> '
+    start = content.find(search)
+    if(start != -1):
+        start += len(search)
+        end = content.find('<', start) - 1
+        f_out.write(content[start:end] + ';')
+    else:
+        f_out.write(';')
+
+    search = 'Teacher:</b> '
     start = content.find(search)
     if(start != -1):
         start += len(search)
