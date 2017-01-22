@@ -14,11 +14,11 @@ DBSession = sessionmaker()
 DBSession.bind = engine
 db = DBSession()
 
-@get('/')
+@get('/scivoo')
 def default(name):
     return name
 
-@get('/search')
+@get('/scivoo/search')
 def search():
     data = db.query(Course).all()
     result = []
@@ -31,11 +31,11 @@ def search():
 
     return {'courses':result}
 
-@post('/comment/<id>')
+@post('/scivoo/comment/<id>')
 def add_comment():
     return "jee"
 
-@get('/static/<filepath>')
+@get('/scivoo/static/<filepath>')
 def get_static(filepath):
     return static_file(filepath, root=(path + '/static'))
 
