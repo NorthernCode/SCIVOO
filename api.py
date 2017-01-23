@@ -27,7 +27,7 @@ def search():
     if (request.forms.get('search') and request.forms.get('period')):
         searchString = '%' + request.forms.get('search') + '%'
         periodString = '%' + request.forms.get('period') + '%'
-        data = db.query(Course).filter(and_(or_(Course.id.like(searchString), Course.name.like(searchString)), Course.period.like(periodString))).all()
+        data = db.query(Course).filter(and_(or_(Course.id.like(searchString), Course.name.like(searchString)), or_(Course.period.like(periodString), periodString==''))).all()
         result = []
         for row in data:
             item = {}
