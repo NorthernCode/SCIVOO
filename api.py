@@ -20,7 +20,7 @@ def default():
 
 @post('/search')
 def search():
-    if (request.forms.get('search') && request.forms.get('period')):
+    if (request.forms.get('search') and request.forms.get('period')):
         searchString = '%' + request.forms.get('search') + '%'
         periodString = '%' + request.forms.get('period') + '%'
         data = db.query(Course).filter(and_(or_(Course.id.like(searchString), Course.name.like(searchString)), Course.period.like(periodString))).all()
