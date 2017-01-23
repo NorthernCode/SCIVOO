@@ -1,6 +1,6 @@
 import os
 import json
-from lib.bottle import get, post, request, run, static_file
+from lib.bottle import get, post, request, route, run, static_file
 from sqlalchemy_decl import Course, Comment, WaitingComment, Base
 from sqlalchemy import create_engine, or_, and_
 from sqlalchemy.orm import sessionmaker
@@ -17,6 +17,10 @@ db = DBSession()
 @get('/')
 def default():
     return "Default"
+
+@route('<any:path>', 'OPTIONS')
+def options_call():
+    return {}
 
 @post('/search')
 def search():
