@@ -22,7 +22,7 @@ def default():
 def options_call(any):
     return {}
 
-@get('/course/<id>')
+@get('/api/course/<id>')
 def course_info(id):
     data = db.query(Course).filter(Course.id.like(id)).all()
     item = {}
@@ -33,9 +33,9 @@ def course_info(id):
 
     return item
 
-@post('/search')
+@post('/api/search')
 def search():
-    if (request.json.get('search') and request.forms.get('period')):
+    if (request.forms.get('search') and request.forms.get('period')):
         searchString = '%' + request.forms.get('search') + '%'
         periodString = '%' + request.forms.get('period') + '%'
         data = db.query(Course).filter(and_(or_(Course.id.like(searchString), Course.name.like(searchString)), or_(Course.period.like(periodString), periodString==''))).all()
@@ -51,7 +51,7 @@ def search():
     else:
         return {'search':'', 'courses':[]}
 
-@post('/comment/<id>')
+@post('/api/comment/<id>')
 def add_comment():
     return "jee"
 
