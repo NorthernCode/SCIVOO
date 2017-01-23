@@ -1,6 +1,6 @@
 import os
 import json
-from lib.bottle import get, post, route, run, static_file
+from lib.bottle import get, post, request, run, static_file
 from sqlalchemy_decl import Course, Comment, WaitingComment, Base
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -20,16 +20,20 @@ def default():
 
 @get('/search')
 def search():
-    data = db.query(Course).all()
-    result = []
-    for row in data:
-        item = {}
-        item['id'] = row.id
-        item['name'] = row.name
-        item['description'] = row.description
-        result.append(item)
+    if (request.forms.get('search')):
+        searchString = '%' + request.forms.get('search') + '%'
+        data = db.query(Course).filter(or_(Course.id.like(searchString), Course.name.like(searchString))).all()
+        result = []
+        for row in data:
+            item = {}
+            item['id'] = row.id
+            item['name'] = row.name
+            item['description'] = row.description
+            result.append(item)
 
-    return {'courses':result}
+        return {'search':request.forms.get('search'), 'courses':result}
+    else:
+        return {'search':'', 'courses':[]}
 
 @post('/comment/<id>')
 def add_comment():
