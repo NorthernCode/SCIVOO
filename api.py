@@ -22,9 +22,20 @@ def default():
 def options_call(any):
     return {}
 
+@get('/course/<id>')
+def course_info(id):
+    data = db.query(Course).filter(Course.id.like(id)).all()
+    item = {}
+    item['id'] = data[0].id
+    item['name'] = data[0].name
+    item['description'] = data[0].description
+    item['period'] = data[0].period
+
+    return item
+
 @post('/search')
 def search():
-    if (request.forms.get('search') and request.forms.get('period')):
+    if (request.json.get('search') and request.forms.get('period')):
         searchString = '%' + request.forms.get('search') + '%'
         periodString = '%' + request.forms.get('period') + '%'
         data = db.query(Course).filter(and_(or_(Course.id.like(searchString), Course.name.like(searchString)), or_(Course.period.like(periodString), periodString==''))).all()
