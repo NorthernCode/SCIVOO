@@ -19,7 +19,7 @@ def default():
     return "Default"
 
 @route('<any:path>', 'OPTIONS')
-def options_call():
+def options_call(any):
     return {}
 
 @post('/search')
