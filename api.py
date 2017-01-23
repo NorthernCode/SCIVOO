@@ -18,7 +18,7 @@ db = DBSession()
 def default():
     return "Default"
 
-@get('/search')
+@post('/search')
 def search():
     if (request.forms.get('search')):
         searchString = '%' + request.forms.get('search') + '%'
