@@ -2,7 +2,7 @@ import os
 import json
 from lib.bottle import get, post, request, run, static_file
 from sqlalchemy_decl import Course, Comment, WaitingComment, Base
-from sqlalchemy import create_engine, or_
+from sqlalchemy import create_engine, or_, and_
 from sqlalchemy.orm import sessionmaker
 
 path = os.getcwd()
@@ -20,9 +20,10 @@ def default():
 
 @post('/search')
 def search():
-    if (request.forms.get('search')):
+    if (request.forms.get('search') && request.forms.get('period')):
         searchString = '%' + request.forms.get('search') + '%'
-        data = db.query(Course).filter(or_(Course.id.like(searchString), Course.name.like(searchString))).all()
+        periodString = '%' + request.forms.get('period') + '%'
+        data = db.query(Course).filter(and_(or_(Course.id.like(searchString), Course.name.like(searchString)), Course.period.like(periodString))).all()
         result = []
         for row in data:
             item = {}
@@ -31,7 +32,7 @@ def search():
             item['description'] = row.description
             result.append(item)
 
-        return {'search':request.forms.get('search'), 'courses':result}
+        return {'search':request.forms.get('search'), 'period':request.forms.get('period'), 'courses':result}
     else:
         return {'search':'', 'courses':[]}
 

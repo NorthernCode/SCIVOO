@@ -15,7 +15,7 @@ class Course(Base):
     name = Column(String(140), nullable=False)
     description = Column(String(1000))
     date = Column(String(30))
-    period = Column(Integer)
+    period = Column(String(5))
 
 class Comment(Base):
     __tablename__ = 'comment'
