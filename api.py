@@ -2,7 +2,7 @@ import os
 import json
 from lib.bottle import get, post, request, run, static_file
 from sqlalchemy_decl import Course, Comment, WaitingComment, Base
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, or_
 from sqlalchemy.orm import sessionmaker
 
 path = os.getcwd()
