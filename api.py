@@ -18,7 +18,7 @@ db = DBSession()
 def default():
     return "Default"
 
-@get('//search')
+@get('/search')
 def search():
     data = db.query(Course).all()
     result = []
@@ -31,11 +31,11 @@ def search():
 
     return {'courses':result}
 
-@post('//comment/<id>')
+@post('/comment/<id>')
 def add_comment():
     return "jee"
 
-@get('//static/<filepath>')
+@get('/static/<filepath>')
 def get_static(filepath):
     return static_file(filepath, root=(path + '/static'))
 
