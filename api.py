@@ -61,7 +61,7 @@ def add_comment():
         db.add(comment)
         db.commit()
 
-@get('/static/<filepath>')
+@get('/static/<filepath:path>')
 def get_static(filepath):
     return static_file(filepath, root=(path + '/static'))
 
