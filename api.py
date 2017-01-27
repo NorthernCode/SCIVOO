@@ -35,8 +35,8 @@ def course_info(id):
     for row in comment_data:
         comment_item = {}
         comment_item['name'] = row.body
-        comment_item['description'] = row.iteration
-        comment_item['description'] = row.rating
+        comment_item['iteration'] = row.iteration
+        comment_item['rating'] = row.rating
         comments.append(comment_item)
     item['comments'] = comments
 
@@ -71,6 +71,17 @@ def add_comment(id):
         comment = Comment(id, request.forms.get('body'), request.forms.get('iteration'), request.forms.get('rating'))
         db.add(comment)
         db.commit()
+    comment_data = db.query(Comments).filter(Comments.course.like(id)).all()
+    comments = []
+    for row in comment_data:
+        comment_item = {}
+        comment_item['name'] = row.body
+        comment_item['iteration'] = row.iteration
+        comment_item['rating'] = row.rating
+        comments.append(comment_item)
+
+    return {'comments':comments}
+
 
 @get('/static/<filepath:path>')
 def get_static(filepath):
