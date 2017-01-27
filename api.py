@@ -71,7 +71,7 @@ def add_comment(id):
         comment = Comment(id, request.forms.get('body'), request.forms.get('iteration'), request.forms.get('rating'))
         db.add(comment)
         db.commit()
-    comment_data = db.query(Comments).filter(Comments.course.like(id)).all()
+    comment_data = db.query(Comment).filter(Comment.course.like(id)).all()
     comments = []
     for row in comment_data:
         comment_item = {}
