@@ -34,13 +34,11 @@ def course_info(id):
     comments = []
     for row in comment_data:
         comment_item = {}
-        comment_item['name'] = row.body
+        comment_item['body'] = row.body
         comment_item['iteration'] = row.iteration
         comment_item['rating'] = row.rating
         comments.append(comment_item)
     item['comments'] = comments
-
-
 
     return item
 
@@ -75,7 +73,7 @@ def add_comment(id):
     comments = []
     for row in comment_data:
         comment_item = {}
-        comment_item['name'] = row.body
+        comment_item['body'] = row.body
         comment_item['iteration'] = row.iteration
         comment_item['rating'] = row.rating
         comments.append(comment_item)
