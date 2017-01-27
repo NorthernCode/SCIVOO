@@ -25,11 +25,22 @@ def options_call(any):
 @get('/api/course/<id>')
 def course_info(id):
     data = db.query(Course).filter(Course.id.like(id)).all()
+    comment_data = db.query(Comments).filter(Comments.course.like(data[0].id)).all()
     item = {}
     item['id'] = data[0].id
     item['name'] = data[0].name
     item['description'] = data[0].description
     item['period'] = data[0].period
+    comments = []
+    for row in comment_data:
+        comment_item = {}
+        comment_item['name'] = row.body
+        comment_item['description'] = row.iteration
+        comment_item['description'] = row.rating
+        comments.append(comment_item)
+    item['comments'] = comments
+
+
 
     return item
 
@@ -55,9 +66,9 @@ def search():
         return {'search':'', 'courses':[]}
 
 @post('/api/comment/<id>')
-def add_comment():
-    if (request.forms.get('course') and request.forms.get('body') and request.forms.get('iteration') and request.forms.get('rating')):
-        comment = WaitingComment(request.forms.get('course'), request.forms.get('body'), request.forms.get('iteration'), request.forms.get('rating'))
+def add_comment(id):
+    if (request.forms.get('body') and request.forms.get('iteration') and request.forms.get('rating')):
+        comment = Comment(id, request.forms.get('body'), request.forms.get('iteration'), request.forms.get('rating'))
         db.add(comment)
         db.commit()
 

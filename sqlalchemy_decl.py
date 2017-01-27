@@ -40,23 +40,6 @@ class Comment(Base):
         self.iteration = iteration
         self.rating = rating
 
-class WaitingComment(Base):
-    __tablename__ = 'waiting_comment'
-    # Here we define columns for the table address.
-    # Notice that each column is also a normal Python instance attribute.
-    id = Column(Integer, primary_key=True)
-    course = Column(String(10), ForeignKey('course.id'))
-    header = Column(String(50))
-    body = Column(String(1000))
-    iteration = Column(String(10))
-    rating = Column(Integer)
-
-    def __init__(self, course, body, iteration, rating):
-        self.course = course
-        self.body = body
-        self.iteration = iteration
-        self.rating = rating
-
 # Create an engine that stores data in the local directory's
 # sqlalchemy_example.db file.
 engine = create_engine('sqlite:///scivoo_sqlalchemy.db')
