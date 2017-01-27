@@ -25,7 +25,7 @@ def options_call(any):
 @get('/api/course/<id>')
 def course_info(id):
     data = db.query(Course).filter(Course.id.like(id)).all()
-    comment_data = db.query(Comments).filter(Comments.course.like(data[0].id)).all()
+    comment_data = db.query(Comment).filter(Comment.course.like(data[0].id)).all()
     item = {}
     item['id'] = data[0].id
     item['name'] = data[0].name
