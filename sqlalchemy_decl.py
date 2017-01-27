@@ -30,15 +30,12 @@ class Comment(Base):
     # Notice that each column is also a normal Python instance attribute.
     id = Column(Integer, primary_key=True)
     course = Column(String(10), ForeignKey('course.id'))
-    header = Column(String(50))
     body = Column(String(1000))
     iteration = Column(String(10))
     rating = Column(Integer, nullable=True)
 
-    def __init__(self, id, course, header, body, iteration, rating):
-        self.id = id
+    def __init__(self, course, body, iteration, rating):
         self.course = course
-        self.header = header
         self.body = body
         self.iteration = iteration
         self.rating = rating
@@ -54,10 +51,8 @@ class WaitingComment(Base):
     iteration = Column(String(10))
     rating = Column(Integer)
 
-    def __init__(self, id, course, header, body, iteration, rating):
-        self.id = id
+    def __init__(self, course, body, iteration, rating):
         self.course = course
-        self.header = header
         self.body = body
         self.iteration = iteration
         self.rating = rating

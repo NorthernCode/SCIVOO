@@ -16,7 +16,7 @@ db = DBSession()
 
 @get('/')
 def default():
-    return "Default"
+    return static_file('index.html', root=(path + '/static-build'))
 
 @route('<any:path>', 'OPTIONS')
 def options_call(any):
@@ -56,7 +56,10 @@ def search():
 
 @post('/api/comment/<id>')
 def add_comment():
-    return "jee"
+    if (request.forms.get('course') and request.forms.get('body') and request.forms.get('iteration') and request.forms.get('rating')):
+        comment = WaitingComment(request.forms.get('course'), request.forms.get('body'), request.forms.get('iteration'), request.forms.get('rating'))
+        db.add(comment)
+        db.commit()
 
 @get('/static/<filepath>')
 def get_static(filepath):
