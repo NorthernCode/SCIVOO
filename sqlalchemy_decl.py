@@ -17,6 +17,13 @@ class Course(Base):
     date = Column(String(30))
     period = Column(String(5))
 
+    def __init__(self, id, name, desc, date, period):
+        self.id = id
+        self.name = name
+        self.desc = desc
+        self.date = date
+        self.period = period
+
 class Comment(Base):
     __tablename__ = 'comment'
     # Here we define columns for the table address.
@@ -28,6 +35,14 @@ class Comment(Base):
     iteration = Column(String(10))
     rating = Column(Integer, nullable=True)
 
+    def __init__(self, id, course, header, body, iteration, rating):
+        self.id = id
+        self.course = course
+        self.header = header
+        self.body = body
+        self.iteration = iteration
+        self.rating = rating
+
 class WaitingComment(Base):
     __tablename__ = 'waiting_comment'
     # Here we define columns for the table address.
@@ -38,6 +53,14 @@ class WaitingComment(Base):
     body = Column(String(1000))
     iteration = Column(String(10))
     rating = Column(Integer)
+
+    def __init__(self, id, course, header, body, iteration, rating):
+        self.id = id
+        self.course = course
+        self.header = header
+        self.body = body
+        self.iteration = iteration
+        self.rating = rating
 
 # Create an engine that stores data in the local directory's
 # sqlalchemy_example.db file.
