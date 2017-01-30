@@ -1,7 +1,7 @@
 import os
 import json
 from lib.bottle import get, post, request, route, run, static_file
-from sqlalchemy_decl import Course, Comment, WaitingComment, Base
+from sqlalchemy_decl import Course, Comment, Base
 from sqlalchemy import create_engine, or_, and_
 from sqlalchemy.orm import sessionmaker
 
@@ -25,11 +25,20 @@ def options_call(any):
 @get('/api/course/<id>')
 def course_info(id):
     data = db.query(Course).filter(Course.id.like(id)).all()
+    comment_data = db.query(Comment).filter(Comment.course.like(data[0].id)).all()
     item = {}
     item['id'] = data[0].id
     item['name'] = data[0].name
     item['description'] = data[0].description
     item['period'] = data[0].period
+    comments = []
+    for row in comment_data:
+        comment_item = {}
+        comment_item['body'] = row.body
+        comment_item['iteration'] = row.iteration
+        comment_item['rating'] = row.rating
+        comments.append(comment_item)
+    item['comments'] = comments
 
     return item
 
@@ -55,11 +64,22 @@ def search():
         return {'search':'', 'courses':[]}
 
 @post('/api/comment/<id>')
-def add_comment():
-    if (request.forms.get('course') and request.forms.get('body') and request.forms.get('iteration') and request.forms.get('rating')):
-        comment = WaitingComment(request.forms.get('course'), request.forms.get('body'), request.forms.get('iteration'), request.forms.get('rating'))
+def add_comment(id):
+    if (request.forms.get('body') and request.forms.get('iteration') and request.forms.get('rating')):
+        comment = Comment(id, request.forms.get('body'), request.forms.get('iteration'), request.forms.get('rating'))
         db.add(comment)
         db.commit()
+    comment_data = db.query(Comment).filter(Comment.course.like(id)).all()
+    comments = []
+    for row in comment_data:
+        comment_item = {}
+        comment_item['body'] = row.body
+        comment_item['iteration'] = row.iteration
+        comment_item['rating'] = row.rating
+        comments.append(comment_item)
+
+    return {'comments':comments}
+
 
 @get('/static/<filepath:path>')
 def get_static(filepath):
