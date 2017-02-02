@@ -17,7 +17,7 @@ class Course(Base):
     date = Column(String(30))
     period = Column(String(5))
     rating = Column(Float())
-    ratings = Column(Integer() default=3)
+    ratings = Column(Integer(), default=3)
 
     def __init__(self, id, name, desc, date, period):
         self.id = id
