@@ -1,6 +1,6 @@
 import os
 import sys
-from sqlalchemy import Column, ForeignKey, Integer, String, Numeric
+from sqlalchemy import Column, ForeignKey, Integer, String, Float
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 from sqlalchemy import create_engine
@@ -16,7 +16,7 @@ class Course(Base):
     description = Column(String(1000))
     date = Column(String(30))
     period = Column(String(5))
-    rating = Column(Numeric())
+    rating = Column(Float())
     ratings = Column(Integer())
 
     def __init__(self, id, name, desc, date, period):
