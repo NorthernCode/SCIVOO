@@ -70,6 +70,8 @@ def add_comment(id):
         db.add(comment)
         db.commit()
     comment_data = db.query(Comment).filter(Comment.course.like(id)).all()
+    
+
     comments = []
     for row in comment_data:
         comment_item = {}

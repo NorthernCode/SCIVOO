@@ -1,4 +1,4 @@
-from sqlalchemy_decl import Course, Comment, WaitingComment, Base
+from sqlalchemy_decl import Course, Comment, Base
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
@@ -22,7 +22,6 @@ for course in f_courses:
         item = Course(data[1], data[2], '', '', '')
     else:
         item = Course(data[1], data[2], '', data[5], '')
-    print('OK')
     db.add(item)
 
 db.commit()

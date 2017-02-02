@@ -1,6 +1,6 @@
 import os
 import sys
-from sqlalchemy import Column, ForeignKey, Integer, String
+from sqlalchemy import Column, ForeignKey, Integer, String, Numeric
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 from sqlalchemy import create_engine
@@ -16,6 +16,8 @@ class Course(Base):
     description = Column(String(1000))
     date = Column(String(30))
     period = Column(String(5))
+    rating = Column(Numeric())
+    ratings = Column(Integer())
 
     def __init__(self, id, name, desc, date, period):
         self.id = id
@@ -23,6 +25,8 @@ class Course(Base):
         self.desc = desc
         self.date = date
         self.period = period
+        self.rating = 0.0
+        self.ratings = 0
 
 class Comment(Base):
     __tablename__ = 'comment'
