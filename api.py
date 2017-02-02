@@ -18,6 +18,10 @@ db = DBSession()
 def default():
     return static_file('index.html', root=(path + '/static-build'))
 
+@get('/course/<any:path>')
+def default_course():
+    default() 
+
 @route('<any:path>', 'OPTIONS')
 def options_call(any):
     return {}
@@ -70,7 +74,7 @@ def add_comment(id):
         db.add(comment)
         db.commit()
     comment_data = db.query(Comment).filter(Comment.course.like(id)).all()
-    
+
 
     comments = []
     for row in comment_data:
