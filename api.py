@@ -20,7 +20,7 @@ def default():
 
 @get('/course/<any:path>')
 def default_course(any):
-    default()
+    return static_file('index.html', root=(path + '/static-build'))
 
 @route('<any:path>', 'OPTIONS')
 def options_call(any):
@@ -35,6 +35,7 @@ def course_info(id):
     item['name'] = data[0].name
     item['description'] = data[0].description
     item['period'] = data[0].period
+    item['rating'] = data[0].rating
     comments = []
     for row in comment_data:
         comment_item = {}
@@ -61,6 +62,7 @@ def search():
             item['id'] = row.id
             item['name'] = row.name
             item['description'] = row.description
+            item['rating'] = row.rating
             result.append(item)
 
         return {'search':request.forms.get('search'), 'period':request.forms.get('period'), 'courses':result}
