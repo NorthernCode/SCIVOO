@@ -75,7 +75,7 @@ def add_comment(id):
         course_item = db.query(Course).filter(Course.id == id).first()
         new_rating = (float(request.forms.get('rating')) + course_item.rating * course_item.ratings) / (course_item.ratings + 1)
         course_item.rating = new_rating
-        course_item.ratings = course_data.ratings + 1
+        course_item.ratings = course_item.ratings + 1
         comment = Comment(id, request.forms.get('body'), request.forms.get('iteration'), request.forms.get('rating'))
         db.add(comment)
         db.commit()
