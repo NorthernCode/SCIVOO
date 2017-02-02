@@ -1,6 +1,7 @@
 from sqlalchemy_decl import Course, Comment, Base
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+import re
 
 engine = create_engine('sqlite:///scivoo_sqlalchemy.db')
 Base.metadata.bind = engine
@@ -25,3 +26,38 @@ for course in f_courses:
     db.add(item)
 
 db.commit()
+
+
+def parsePeriod(periods):
+    result = ''
+    periods = periods.replace('¿', '-')
+    for char in periods:
+        if(char == 'I' or char == 'V' or char == ',' or char == '-'):
+            result += char
+        elif(char == ' ' ):
+            continue
+        else:
+            return parseRomans(result.strip())
+    return parseRomans(result.strip())
+
+def parseRomans(periods):
+    result = periods.replace('III', '3')
+    result = result.replace('II', '2')
+    result = result.replace('IV', '4')
+    result = result.replace('I', '1')
+    result = result.replace('V', '5')
+    return result
+
+def getStartingPeriods(periods):
+    result = ''
+    starts = True
+    for char in periods:
+        if(char == ','):
+            starts = True
+            result += char
+        elif(char == '-'):
+            starts = False
+        elif(starts):
+            result += char
+    print result
+    return result
