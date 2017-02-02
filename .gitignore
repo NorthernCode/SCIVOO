@@ -89,3 +89,6 @@ ENV/
 
 #DS_store
 .DS_Store
+
+#SQLite DB
+scivoo_sqlalchemy.db

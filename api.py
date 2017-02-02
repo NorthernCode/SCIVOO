@@ -19,8 +19,8 @@ def default():
     return static_file('index.html', root=(path + '/static-build'))
 
 @get('/course/<any:path>')
-def default_course():
-    default() 
+def default_course(any):
+    default()
 
 @route('<any:path>', 'OPTIONS')
 def options_call(any):
