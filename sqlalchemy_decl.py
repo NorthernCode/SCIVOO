@@ -17,7 +17,7 @@ class Course(Base):
     date = Column(String(30))
     period = Column(String(5))
     rating = Column(Float())
-    ratings = Column(Integer())
+    ratings = Column(Integer() default=3)
 
     def __init__(self, id, name, desc, date, period):
         self.id = id
@@ -26,7 +26,7 @@ class Course(Base):
         self.date = date
         self.period = period
         self.rating = 0.0
-        self.ratings = 0
+        self.ratings = 3
 
 class Comment(Base):
     __tablename__ = 'comment'
