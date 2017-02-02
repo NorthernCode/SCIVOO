@@ -59,5 +59,4 @@ def getStartingPeriods(periods):
             starts = False
         elif(starts):
             result += char
-    print result
     return result
