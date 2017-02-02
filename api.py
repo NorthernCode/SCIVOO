@@ -72,9 +72,10 @@ def search():
 @post('/api/comment/<id>')
 def add_comment(id):
     if (request.forms.get('body') and request.forms.get('iteration') and request.forms.get('rating')):
-        course_data = db.query(Course).filter(Course.id == id).all()
+        course_item = db.query(Course).filter(Course.id == id).all()
         new_rating = (float(request.forms.get('rating')) + course_data[0].rating * course_data[0].ratings) / (course_data[0].ratings + 1)
-        update(Course).where(Course.id == id).values(rating = new_rating, ratings = (course_data[0].ratings + 1))
+        course_item.rating = new_rating
+        course_item.ratings = course_data[0].ratings + 1
         comment = Comment(id, request.forms.get('body'), request.forms.get('iteration'), request.forms.get('rating'))
         db.add(comment)
         db.commit()
