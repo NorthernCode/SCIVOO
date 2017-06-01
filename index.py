@@ -1,0 +1,100 @@
+#!/usr/bin/env python
+import os
+import json
+from bottle import get, post, request, route, run, static_file
+from sqlalchemy_decl import Course, Comment, Base
+from sqlalchemy import create_engine, or_, and_, update
+from sqlalchemy.orm import sessionmaker
+
+path = os.getcwd()
+
+engine = create_engine('sqlite:///scivoo_sqlalchemy.db')
+Base.metadata.bind = engine
+
+DBSession = sessionmaker()
+DBSession.bind = engine
+db = DBSession()
+
+@get('/')
+def default():
+    return static_file('index.html', root=(path + '/static-build'))
+
+#@get('/course/<any:path>')
+#def default_course(any):
+#    return static_file('index.html', root=(path + '/static-build'))
+
+#@route('<any:path>', 'OPTIONS')
+#def options_call(any):
+#    return {}
+
+@get('/course/<id>')
+def course_info(id):
+    data = db.query(Course).filter(Course.id.like(id)).all()
+    comment_data = db.query(Comment).filter(Comment.course.like(data[0].id)).all()
+    item = {}
+    item['id'] = data[0].id
+    item['name'] = data[0].name
+    item['description'] = data[0].description
+    item['period'] = data[0].period
+    item['rating'] = data[0].rating
+    comments = []
+    for row in comment_data:
+        comment_item = {}
+        comment_item['body'] = row.body
+        comment_item['iteration'] = row.iteration
+        comment_item['rating'] = row.rating
+        comments.append(comment_item)
+    item['comments'] = comments
+
+    return item
+
+@post('/search')
+def search():
+    if (request.forms.get('search') and request.forms.get('period')):
+        searchString = '%' + request.forms.get('search') + '%'
+        periodString = '%' + request.forms.get('period') + '%'
+        if(request.forms.get('period') == 'Any'):
+            data = db.query(Course).filter(or_(Course.id.like(searchString), Course.name.like(searchString))).all()
+        else:
+            data = db.query(Course).filter(and_(or_(Course.id.like(searchString), Course.name.like(searchString)), Course.period.like(periodString))).all()
+        result = []
+        for row in data:
+            item = {}
+            item['id'] = row.id
+            item['name'] = row.name
+            item['description'] = row.description
+            item['rating'] = row.rating
+            result.append(item)
+
+        return {'search':request.forms.get('search'), 'period':request.forms.get('period'), 'courses':result}
+    else:
+        return {'search':'', 'courses':[]}
+
+@post('/comment/<id>')
+def add_comment(id):
+    if (request.forms.get('body') and request.forms.get('iteration') and request.forms.get('rating')):
+        course_item = db.query(Course).filter(Course.id == id).first()
+        new_rating = (float(request.forms.get('rating')) + course_item.rating * course_item.ratings) / (course_item.ratings + 1)
+        course_item.rating = new_rating
+        course_item.ratings = course_item.ratings + 1
+        comment = Comment(id, request.forms.get('body'), request.forms.get('iteration'), request.forms.get('rating'))
+        db.add(comment)
+        db.commit()
+
+    comment_data = db.query(Comment).filter(Comment.course == id).all()
+    comments = []
+    for row in comment_data:
+        comment_item = {}
+        comment_item['body'] = row.body
+        comment_item['iteration'] = row.iteration
+        comment_item['rating'] = row.rating
+        comments.append(comment_item)
+
+    return {'comments':comments}
+
+@get('/static/<filepath:path>')
+def get_static(filepath):
+    return static_file(filepath, root=(path + '/static'))
+
+#run(host='localhost', port=8080, debug=True)
+run(server='cgi', debug=True)
