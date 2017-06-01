@@ -1,6 +1,7 @@
+#!/usr/bin/env python
 import os
 import json
-from lib.bottle import get, post, request, route, run, static_file
+from bottle import get, post, request, route, run, static_file
 from sqlalchemy_decl import Course, Comment, Base
 from sqlalchemy import create_engine, or_, and_, update
 from sqlalchemy.orm import sessionmaker
@@ -18,15 +19,15 @@ db = DBSession()
 def default():
     return static_file('index.html', root=(path + '/static-build'))
 
-@get('/course/<any:path>')
-def default_course(any):
-    return static_file('index.html', root=(path + '/static-build'))
+#@get('/course/<any:path>')
+#def default_course(any):
+#    return static_file('index.html', root=(path + '/static-build'))
 
-@route('<any:path>', 'OPTIONS')
-def options_call(any):
-    return {}
+#@route('<any:path>', 'OPTIONS')
+#def options_call(any):
+#    return {}
 
-@get('/api/course/<id>')
+@get('/course/<id>')
 def course_info(id):
     data = db.query(Course).filter(Course.id.like(id)).all()
     comment_data = db.query(Comment).filter(Comment.course.like(data[0].id)).all()
@@ -47,7 +48,7 @@ def course_info(id):
 
     return item
 
-@post('/api/search')
+@post('/search')
 def search():
     if (request.forms.get('search') and request.forms.get('period')):
         searchString = '%' + request.forms.get('search') + '%'
@@ -69,7 +70,7 @@ def search():
     else:
         return {'search':'', 'courses':[]}
 
-@post('/api/comment/<id>')
+@post('/comment/<id>')
 def add_comment(id):
     if (request.forms.get('body') and request.forms.get('iteration') and request.forms.get('rating')):
         course_item = db.query(Course).filter(Course.id == id).first()
@@ -91,9 +92,9 @@ def add_comment(id):
 
     return {'comments':comments}
 
-
 @get('/static/<filepath:path>')
 def get_static(filepath):
     return static_file(filepath, root=(path + '/static'))
 
-run(host='localhost', port=8080, debug=True)
+#run(host='localhost', port=8080, debug=True)
+run(server='cgi', debug=True)
