@@ -42,6 +42,18 @@ class Comment(Base):
         self.iteration = iteration
         self.rating = rating
 
+class User(Base):
+    __tablename__ = 'user'
+    id = Column(Integer, primary_key=True)
+    username = Column(String(16))
+    password_hash = Column(String(64))
+    role = Column(Integer, nullable=True)
+
+    def __init__(self, username, password_hash, role):
+        self.username = username
+        self.password_hash = password_hash
+        self.role = role
+
 # Create an engine that stores data in the local directory's
 # sqlalchemy_example.db file.
 engine = create_engine('sqlite:///scivoo_sqlalchemy.db')

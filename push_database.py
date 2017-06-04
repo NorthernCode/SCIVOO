@@ -10,6 +10,8 @@ DBSession = sessionmaker()
 DBSession.bind = engine
 db = DBSession()
 
+#Courses
+
 f_courses = open('course_data.csv', 'r', encoding='utf-8')
 
 for course in f_courses:
@@ -25,6 +27,12 @@ for course in f_courses:
         item = Course(data[1], data[2], '', data[5], '')
     db.add(item)
 
+#Admin User
+admin = db.query(User).filter(User.username.like('admin')).all() #Should return empty set
+if(len(admin) == 0):
+	item 0 User('admin', '01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b', 0)
+	db.add(item)
+	
 db.commit()
 
 
