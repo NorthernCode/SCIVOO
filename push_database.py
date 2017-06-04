@@ -1,4 +1,4 @@
-from sqlalchemy_decl import Course, Comment, Base
+from sqlalchemy_decl import Course, Comment, Base, User
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 import re
@@ -30,9 +30,9 @@ for course in f_courses:
 #Admin User
 admin = db.query(User).filter(User.username.like('admin')).all() #Should return empty set
 if(len(admin) == 0):
-	item 0 User('admin', '01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b', 0)
+	item = User('admin', '01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b', 0)
 	db.add(item)
-	
+
 db.commit()
 
 

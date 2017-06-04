@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 import os
 import json
+import hashlib
 from bottle import get, post, request, route, run, static_file
-from sqlalchemy_decl import Course, Comment, Base
+from sqlalchemy_decl import Course, Comment, Base, User
 from sqlalchemy import create_engine, or_, and_, update
 from sqlalchemy.orm import sessionmaker
 
@@ -91,6 +92,15 @@ def add_comment(id):
         comments.append(comment_item)
 
     return {'comments':comments}
+
+@post('/login')
+def login():
+	if (request.forms.get('username') and request.forms.get('password')):
+		password_hash = hashlib.sha224(str.encode(request.forms.get('password'))).hexdigest()
+		user = db.query(User).filter(and_(User.username.like(request.forms.get('username')), User.password.like(password_hash)).first()
+		if(len(user == 1)):
+			return {'token':'123'}
+	return {'token':''}
 
 @get('/static/<filepath:path>')
 def get_static(filepath):

@@ -48,11 +48,16 @@ class User(Base):
     username = Column(String(16))
     password_hash = Column(String(64))
     role = Column(Integer, nullable=True)
+	token = Column(String(64))
+	expires = Column(Integer)
 
     def __init__(self, username, password_hash, role):
         self.username = username
         self.password_hash = password_hash
-        self.role = role
+		self.role = role
+		self.token = ''
+		self.expires = 0
+
 
 # Create an engine that stores data in the local directory's
 # sqlalchemy_example.db file.
