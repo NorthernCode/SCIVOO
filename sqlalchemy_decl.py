@@ -25,8 +25,8 @@ class Course(Base):
         self.desc = desc
         self.date = date
         self.period = period
-        self.rating = 0.0
-        self.ratings = 3
+        self.rating = 3.0
+        self.ratings = 0
 
 class Comment(Base):
     __tablename__ = 'comment'

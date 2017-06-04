@@ -89,10 +89,11 @@ ENV/
 
 #DS_store
 .DS_Store
+.babelrc
 
 #SQLite DB
-#scivoo_sqlalchemy.db
+scivoo_sqlalchemy.db
 
 #static files from another repo
-#static/
-#static-build/
+static/
+static-build/
