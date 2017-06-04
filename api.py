@@ -100,6 +100,7 @@ def login():
         user = db.query(User).filter(and_(User.username.like(request.forms.get('username')), User.password_hash.like(password_hash))).first()
         if(len(user) == 1):
             return {'token':'123'}
+        return {'token':'1'}
     return {'token':''}
 
 @get('/static/<filepath:path>')

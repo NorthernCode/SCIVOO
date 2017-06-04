@@ -30,7 +30,7 @@ for course in f_courses:
 #Admin User
 admin = db.query(User).filter(User.username.like('admin')).all() #Should return empty set
 if(len(admin) == 0):
-	item = User('admin', '01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b', 0)
+	item = User('admin', '81729e25011a4162746868bc75e52b954d40b8581c9b892cd2e0de63acc8d8c3', 0)
 	db.add(item)
 
 db.commit()
