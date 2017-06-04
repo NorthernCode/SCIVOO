@@ -95,12 +95,12 @@ def add_comment(id):
 
 @post('/login')
 def login():
-	if (request.forms.get('username') and request.forms.get('password')):
-		password_hash = hashlib.sha224(str.encode(request.forms.get('password'))).hexdigest()
-		user = db.query(User).filter(and_(User.username.like(request.forms.get('username')), User.password.like(password_hash)).first()
-		if(len(user == 1)):
-			return {'token':'123'}
-	return {'token':''}
+    if (request.forms.get('username') and request.forms.get('password')):
+        password_hash = hashlib.sha224(str.encode(request.forms.get('password'))).hexdigest()
+        user = db.query(User).filter(and_(User.username.like(request.forms.get('username')), User.password.like(password_hash)).first()
+        if(len(user == 1)):
+            return {'token':'123'}
+    return {'token':''}
 
 @get('/static/<filepath:path>')
 def get_static(filepath):
