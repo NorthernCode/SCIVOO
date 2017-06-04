@@ -98,10 +98,10 @@ def login():
     if (request.forms.get('username') and request.forms.get('password')):
         password_hash = hashlib.sha256(str.encode(request.forms.get('password'))).hexdigest()
         user = db.query(User).filter(and_(User.username.like(request.forms.get('username')), User.password_hash.like(password_hash))).first()
-        if(len(user) == 1):
+        if(user):
+            user.token = '123'
             return {'token':'123'}
-        return {'token':'1'}
-    return {'token':''}
+    return {'token':'', 'message':'login failed'}
 
 @get('/static/<filepath:path>')
 def get_static(filepath):
