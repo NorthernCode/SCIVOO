@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import os
 import json
+from beaker.middleware import SessionMiddleware
 from bottle import get, post, request, route, run, static_file
 from sqlalchemy_decl import Course, Comment, Base
 from sqlalchemy import create_engine, or_, and_, update
