@@ -30,8 +30,6 @@ class Course(Base):
 
 class Comment(Base):
     __tablename__ = 'comment'
-    # Here we define columns for the table address.
-    # Notice that each column is also a normal Python instance attribute.
     id = Column(Integer, primary_key=True)
     course = Column(String(10), ForeignKey('course.id'))
     body = Column(String(1000))
