@@ -1,7 +1,5 @@
 #!/usr/bin/env python
-import os
-import json
-import hashlib
+import os, json, hashlib, math, time
 from bottle import get, post, request, route, run, static_file
 from sqlalchemy_decl import Course, Comment, Base, User
 from sqlalchemy import create_engine, or_, and_, update
@@ -100,8 +98,19 @@ def login():
         user = db.query(User).filter(and_(User.username.like(request.forms.get('username')), User.password_hash.like(password_hash))).first()
         if(user):
             user.token = '123'
+            user.expires = math.floor(time.time()) + 1800
+            db.commit()
             return {'token':'123'}
     return {'token':'', 'message':'login failed'}
+
+@post('/isadmin')
+def is_admin():
+    if (request.forms.get('token')):
+        user = db.query(User).filter(User.token.like(request.forms.get('token')).first()
+        if (user):
+            if (user.expires > math.floor(time.time())):
+                return {'success':true}
+    return {}
 
 @get('/static/<filepath:path>')
 def get_static(filepath):
