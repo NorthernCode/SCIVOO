@@ -92,3 +92,7 @@ ENV/
 
 #SQLite DB
 scivoo_sqlalchemy.db
+
+#static files from another repo
+static/
+static-build/
