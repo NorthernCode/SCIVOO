@@ -69,7 +69,6 @@ def search():
             item = {}
             item['id'] = row.id
             item['name'] = row.name
-            item['description'] = row.description
             item['period'] = row.period
             item['credit'] = row.credit
             item['rating'] = row.rating
