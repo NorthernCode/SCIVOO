@@ -1,27 +1,31 @@
-15502;SCI.trai;Harjoittelu;Training;Praktik;01.08.2016 - 31.07.2017;;0;
+15502;SCI.trai;Harjoittelu;Training;Praktik;01.08.2016 - 31.07.2017;;0-10;
 15501;SCI.khar;Kansainvälinen harjoittelu (alempi perustutkinto);International Training (lower university degree);Internationell praktik (lägre grundexamen);01.08.2016 - 31.07.2017;;1-25;
 15500;SCI.itra;Kansainvälinen harjoittelu (ylempi perustutkinto);International Training (higher university degree);Internationell praktik (högre grundexamen);01.08.2016 - 31.07.2017;;1-25;
-15499;SCI.harj;Harjoittelu;Training;Praktik;01.08.2016 - 31.07.2017;;0;
+15499;SCI.harj;Harjoittelu;Training;Praktik;01.08.2016 - 31.07.2017;;0-10;
 15032;SCI-C1000;SCI-projektikurssi;SCI project;SCI projekt;02.01.2017 - 19.05.2017;I-II, III-V (syksy 2016, kevät 2017);10;Stina Giesecke
 15031;SCI-C1000;SCI-projektikurssi;SCI project;SCI projekt;12.09.2016 - 16.12.2016;I-II, III-V (syksy 2016, kevät 2017);10;Stina Giesecke
 14760;SCI-A0000;Johdatus opiskeluun 2016-2017;Introduction to Studies 2016-2017;Introduktion till studierna 2016-2017;15.09.2016 - 07.04.2017;I-V;2;Eerikki Mäki, Stina Giesecke, Sanna Suoranta, Mikko Alava
+11377;;;;;;;;
 8716;SCI-A0000;Johdatus opiskeluun 2015-2016;Introduction to Studies;Introduktion till studierna;08.09.2015 - 09.12.2015;I-V;2;
 8722;SCI-C1000;SCI-projektikurssi;SCI project;SCI projekt;04.01.2016 - 20.05.2016;I-II, III-V (syksy 2016, kevät 2017);10;
 8721;SCI-C1000;SCI-projektikurssi;SCI project;SCI projekt;07.09.2015 - 04.12.2015;I-II, III-V (syksy 2016, kevät 2017);10;
-9719;;;;;;;
+9719;;;;;;;;
+15839;MS-A0502;Todennäköisyyslaskennan ja tilastotieteen peruskurssi;Todennäköisyyslaskennan ja tilastotieteen peruskurssi;Todennäköisyyslaskennan ja tilastotieteen peruskurssi;25.07.2017 - 24.08.2017;II (syksy);5;
+15838;MS-A0202;Differentiaali- ja integraalilaskenta 2 (SCI);Differentiaali- ja integraalilaskenta 2 (SCI);Differentiaali- ja integraalilaskenta 2 (SCI);16.05.2017 - 15.06.2017;I (syksy);5;Markku Malmivuori
+15753;MS-E1997;Random Matrices;Random Matrices;Random Matrices;10.04.2017 - 16.05.2017;;1-10;Christian Webb
 15646;MS-E1995;Tensors in Applications;Tensors in Applications;Tensors in Applications;22.02.2017 - 29.03.2017;;1-10;Kaie Kubjas
 15619;MS-E1990;Introduction to R-programming;Introduction to R-programming;Introduction to R-programming;14.01.2017 - 15.01.2017;;1-10;Sami Helander
 15363;MS-E1993;Hopf algebras and representations;Hopf algebras and representations;Hopf algebras and representations;31.10.2016 - 09.12.2016;;1-10;Kalle Kytölä
 15059;MS-E1992;Asymptotic statistics;Asymptotic statistics;Asymptotic statistics;;;1-10;Lasse Leskelä, Pauliina Ilmonen
-12013;;;;;;;
-12106;;;;;;;
-12107;;;;;;;
-12108;;;;;;;
-12109;;;;;;;
-12110;;;;;;;
-12111;;;;;;;
-12112;;;;;;;
-14768;SCI3029.kand;Kandidaatintyö ja seminaari (Matematiikka ja systeemitieteet);Bachelor's Thesis and Seminar (Mathematics and Systems Sciences);Kandidatarbete och seminarium (Matematik och systemvetenskaper);12.09.2016 - 30.09.2017;;10;Camilla Hollanti
+12013;;;;;;;;
+12106;;;;;;;;
+12107;;;;;;;;
+12108;;;;;;;;
+12109;;;;;;;;
+12110;;;;;;;;
+12111;;;;;;;;
+12112;;;;;;;;
+14768;SCI3029.kand;Kandidaatintyö ja seminaari (Matematiikka ja systeemitieteet);Bachelor's Thesis and Seminar (Mathematics and Systems Sciences);Kandidatarbete och seminarium (Matematik och systemvetenskaper);12.09.2016 - 30.09.2017;;10;Ahti Salo, Camilla Hollanti
 14632;Mat-1.1040;Matematiikan peruskurssi L4;Basic Course in Mathematics L4;Grundkurs i matematik L4;22.01.2017 - 05.02.2017;III-IV;10;Juha Kinnunen
 14498;MS-E2177;Operaatiotutkimuksen projektityöseminaari (V);Seminar on Case Studies in Operations Research (V);Projektarbetsseminarium i operationsanalys (V);13.01.2017 - 27.05.2017;III - IV;5;Ahti Salo
 14497;MS-E2170;Simulation (V);Simulation (V);Simulation (V);20.02.2017 - 30.03.2017;IV (Spring);5;Joona Tuovinen
@@ -42,8 +46,9 @@
 14482;MS-E1996;Matroid theory;Matroid theory;Matroid theory;01.11.2016 - 07.12.2016;;1-10;Camilla Hollanti, Thomas Westerbäck
 14481;MS-E1995;Elliptic Curves;Elliptic Curves;Elliptic Curves;31.10.2016 - 08.12.2016;;1-10;Camilla Hollanti, David Karpuk
 14480;MS-E1994;Elliptic Curve Cryptography;Elliptic Curve Cryptography;Elliptic Curve Cryptography;12.09.2016 - 21.10.2016;;1-10;Camilla Hollanti, David Karpuk
-14479;MS-E1993;Time-frequency analysis;Course with Varying Content V;Course with Varying Content V;10.04.2017 - 19.05.2017;;1-10;Ville Turunen
-14477;MS-E1991;Analysis in metric spaces;Course with Varying Content V;Analysis in metric spaces;10.04.2017 - 18.05.2017;;1-10;Riikka Korte
+14479;MS-E1993;Time-frequency analysis;Course with Varying Content V;Course with Varying Content V;11.04.2017 - 19.05.2017;;1-10;Ville Turunen
+14478;MS-E1992;Harmonic analysis;Course with Varying Content V;Course with Varying Content V;02.01.2017 - 09.02.2017;;1-10;Juha Kinnunen
+14477;MS-E1991;Analysis in metric spaces;Analysis in metric spaces;Analysis in metric spaces;10.04.2017 - 18.05.2017;;1-10;Riikka Korte
 14476;MS-E1990;How to Lie with Statistics?;Course with Varying Content V;Course with Varying Content V;31.10.2016 - 09.12.2016;;1-10;Pauliina Ilmonen
 14475;MS-E1743;Computational mechanics 2;Computational mechanics 2;Computational mechanics 2;11.04.2017 - 18.05.2017;V (Spring)  ;5;Rolf Stenberg
 14474;MS-E1742;Computational mechanics 1;Computational mechanics 1;Computational mechanics 1;21.02.2017 - 30.03.2017;IV (Spring)  ;5;Rolf Stenberg
@@ -64,7 +69,7 @@
 14459;MS-E1051;Combinatorics;Combinatorics;Combinatorics;13.09.2016 - 21.10.2016;I (Autumn)  ;5;Alexander Engström
 14458;MS-E1050;Graph theory;Graph theory;Graph theory;12.09.2016 - 21.10.2016;I (Autumn);5;Alexander Engström
 14457;MS-E1011;Tieteen historia;History of Science;Vetenskapshistoria;12.09.2016 - 08.12.2016;I-II (syksy 2016), joka toinen vuosi  ;5;Ilpo Halonen
-14456;MS-E1000;Crystal Flowers in Halls of Mirrors: Mathematics meets Art and Architecture;Crystal Flowers in Halls of Mirrors: Mathematics meets Art and Architecture;Crystal Flowers in Halls of Mirrors: Mathematics meets Art and Architecture;03.01.2017 - 31.05.2017;III-IV (Spring 2017), every other year  ;5-15;Kirsi Peltonen
+14456;MS-E1000;Crystal Flowers in Halls of Mirrors: Mathematics meets Art and Architecture;Crystal Flowers in Halls of Mirrors: Mathematics meets Art and Architecture;Crystal Flowers in Halls of Mirrors: Mathematics meets Art and Architecture;03.01.2017 - 19.05.2017;III-IV (Spring 2017), every other year  ;5-15;Kirsi Peltonen
 14455;MS-C2132;Systeemianalyysilaboratorio I;Systems Analysis Laboratory I;Systemanalyslaboratorium I;02.01.2017 - 17.05.2017;III-V;5;Kai Virtanen
 14454;MS-C2128;Ennustaminen ja aikasarja-analyysi;Prediction and Time Series Analysis;Prediktering och tidsserieanalys;31.10.2016 - 08.12.2016;II (Syksy);5;Lauri Viitasaari
 14453;MS-C2111;Stokastiset prosessit;Stochastic Processes;Stokastiska processer;12.09.2016 - 21.10.2016;I (Syksy);5;Kalle Kytölä
@@ -83,7 +88,7 @@
 14440;MS-C1080;Algebran perusrakenteet;Introduction to abstract algebra;Algebrans grundstrukturer;03.01.2017 - 09.02.2017;III (kevät);5;Camilla Hollanti
 14439;MS-A0509;Grundkurs i sannolikhetskalkyl och statistik;First course in probability and statistics;Grundkurs i sannolikhetskalkyl och statistik;02.01.2017 - 15.02.2017;III (kevät);5;Georg Metsalo
 14438;MS-A0504;First course in probability and statistics;First course in probability and statistics;First course in probability and statistics;20.02.2017 - 04.04.2017;IV (Spring);5;
-14437;MS-A0503;Todennäköisyyslaskennan ja tilastotieteen peruskurssi;First course in probability and statistics;Grundkurs i sannolikhetskalkyl och statistik;02.01.2017 - 15.02.2017;III (kevät);5;
+14437;MS-A0503;Todennäköisyyslaskennan ja tilastotieteen peruskurssi;First course in probability and statistics;Grundkurs i sannolikhetskalkyl och statistik;02.01.2017 - 15.02.2017;III (kevät);5;Lasse Leskelä
 14436;MS-A0502;Todennäköisyyslaskennan ja tilastotieteen peruskurssi;First course in probability and statistics;Grundkurs i sannolikhetskalkyl och statistik;31.10.2016 - 12.12.2016;II (syksy);5;Lasse Leskelä
 14435;MS-A0501;Todennäköisyyslaskennan ja tilastotieteen peruskurssi;First course in probability and statistics;Grundkurs i sannolikhetskalkyl och statistik;12.09.2016 - 24.10.2016;I (syksy);5;Lasse Leskelä
 14434;MS-A0409;Grundkurs i diskret matematik;Foundations of discrete mathematics;Grundkurs i diskret matematik;12.09.2016 - 27.10.2016;I (syksy);5;Georg Metsalo
@@ -104,7 +109,7 @@
 14419;MS-A0202;Differentiaali- ja integraalilaskenta 2 (SCI);Differential and integral calculus 2 (SCI);Differential- och integralkalkyl 2 (SCI);12.09.2016 - 26.10.2016;I (syksy);5;Antti Rasila
 14418;MS-A0201;Differentiaali- ja integraalilaskenta 2 (TFM);Differential and integral calculus 2 (TFM);Differential- och integralkalkyl 2 (TFM);03.01.2017 - 13.02.2017;III (kevät);5;Pekka Alestalo
 14417;MS-A0109;Differential- och integralkalkyl 1;Differential and integral calculus 1;Differential- och integralkalkyl 1;13.09.2016 - 26.10.2016;I (Syksy);5;Björn Ivarsson
-14416;MS-A0108;Differentiaali- ja integraalilaskenta 1;Differential and integral calculus 1;Differential- och integralkalkyl 1;11.04.2017 - 18.05.2017;V (kevät);5;Pekka Alestalo
+14416;MS-A0108;Differentiaali- ja integraalilaskenta 1;Differential and integral calculus 1;Differential- och integralkalkyl 1;11.04.2017 - 18.05.2017;V (kevät);5;Janne Korvenpää
 14415;MS-A0107;Differentiaali- ja integraalilaskenta 1 (CHEM);Differential and integral calculus 1 (CHEM);Differential- och integralkalkyl 1 (CHEM);03.01.2017 - 16.02.2017;III (kevät);5;Harri Hakula
 14414;MS-A0106;Differentiaali- ja integraalilaskenta 1 (ENG2);Differential and integral calculus 1 (ENG2);Differential- och integralkalkyl 1 (ENG2);31.10.2016 - 15.12.2016;II (Syksy);5;Pekka Alestalo
 14413;MS-A0105;Differentiaali- ja integraalilaskenta 1 (ENG1);Differential and integral calculus 1 (ENG1);Differential- och integralkalkyl 1 (ENG1);13.09.2016 - 26.10.2016;I (Syksy);5;Kirsi Peltonen
@@ -256,14 +261,17 @@
 7641;MS-E2177;Operaatiotutkimuksen projektityöseminaari (V);Seminar on Case Studies in Operations Research (V);Projektarbetsseminarium i operationsanalys (V);15.01.2016 - 28.05.2016;III - IV;5;
 7647;;;b>Teaching Period;b>Credits;01.08.2015 - 31.07.2016;I - II;5-8;
 8744;SCI3029.kand;Kandidaatintyö ja seminaari (Matematiikka ja systeemitieteet);Bachelor's Thesis and Seminar (Mathematics and Systems Sciences);Kandidatarbete och seminarium (Matematik och systemvetenskaper);07.09.2015 - 31.08.2016;;10;
+15702;NBE-E4530;Special Course in Human Neuroscience V / Human brain connectivity;Special Course in Human Neuroscience V / Human brain connectivity;Special Course in Human Neuroscience V / Human brain connectivity;11.04.2017 - 18.05.2017;I, II, III, IV, V;2-5;Enrico Glerean
 15378;NBE-E4530;Special Course in Human Neuroscience/Mapping, decoding and modeling the human brain;Special Course in Human Neuroscience/Mapping, decoding and modeling the human brain;Special Course in Human Neuroscience/Mapping, decoding and modeling the human brain;31.10.2016 - 05.12.2016;I, II, III, IV, V;2-5;Mikko Sams
 14657;NBE-E4580;Research Seminar on Biophysics and Biomedical Engineering V;Research Seminar on Biophysics and Biomedical Engineering V;Research Seminar on Biophysics and Biomedical Engineering V;04.01.2017 - 29.03.2017;III-IV, organised in odd years;3;Paavo Kinnunen
 14654;NBE-E4550;Special Course in Molecular Engineering V;Special Course in Molecular Engineering V;Special Course in Molecular Engineering V;12.09.2016 - 19.05.2017;I-II, III-IV;5;
+15916;;;;;;;;
 14653;NBE-E4540;Special Course in Biomedical Engineering V;Special Course in Biomedical Engineering V;Special Course in Biomedical Engineering V;18.09.2016 - 21.05.2017;The course is organised according to agreement.;2-5;
 14652;NBE-E4530;Special Course in Human Neuroscience V;Special Course in Human Neuroscience V;Special Course in Human Neuroscience V;18.09.2016 - 21.05.2017;I, II, III, IV, V;2-5;Mikko Sams
 14648;NBE-E4240;Advanced Course on Human Neuroscience;Advanced Course on Human Neuroscience;Advanced Course on Human Neuroscience;22.02.2017 - 19.05.2017;IV-V;5;Mikko Sams
 14647;NBE-E4230;Affective Neuroscience;Affective Neuroscience;Affective Neuroscience;18.09.2016 - 11.12.2016;I - II;3;Iiro Jääskeläinen
 14646;NBE-E4220;Introduction to Human Neuroscience;Introduction to Human Neuroscience;Introduction to Human Neuroscience;03.01.2017 - 07.02.2017;III;5;Iiro Jääskeläinen
+14645;NBE-E4210;Structure and operation of the human brain;Structure and operation of the human brain;Structure and operation of the human brain;12.09.2016 - 05.12.2016;I-II;5;Risto Ilmoniemi
 14644;NBE-E4130;Information Processing in Neural Circuits;Information Processing in Neural Circuits;Information Processing in Neural Circuits;04.01.2017 - 17.05.2017;III-V (spring), odd years;5;Petri Ala-Laurila
 14643;NBE-E4120;Cellular Electrophysiology;Cellular Electrophysiology;Cellular Electrophysiology;14.09.2016 - 07.12.2016;I-II (Autumn), even years;5;Ari Koskelainen
 14642;NBE-E4100;Molecular Biophysics;Molecular Biophysics;Molecular Biophysics;02.01.2017 - 17.05.2017;III-V (Spring);5;Anton Kuzyk, Jukka Tulkki
@@ -277,6 +285,7 @@
 14634;NBE-C2102;Sähkömagneettisen kenttäteorian perusteet;Fundamentals of Electromagnetic Field Theory;Grunderna i elektromagnetisk fältteori;02.01.2017 - 10.02.2017;III;5;Matti Stenroos
 14633;NBE-C2101;Biofysiikka;Biophysics;Biofysik;09.01.2017 - 31.03.2017;III-IV;5;Ari Koskelainen
 13876;JOIN-E3000;Life Science Technologies Project Course;Life Science Technologies Project Course;Life Science Technologies Project Course;02.01.2017 - 15.05.2017;III-V (Spring).;10;Tomi Laurila, Anne Usvalampi, Jari Saramäki
+11916;Tfy-99.3249;Biomedical Engineering, special course P: Physics, measurements and data analysis of MEG and EEG;Biomedical Engineering, special course P: Physics, measurements and data analysis of MEG and EEG;Biomedical Engineering, special course P: Physics, measurements and data analysis of MEG and EEG;01.05.2016 - 24.05.2016;;2-5;
 10881;;;b>Teaching Period;b>Credits;01.08.2015 - 31.07.2016;Kurssi on poistunut tarjonnasta. Korvaavaa kurssia ei ole määritelty. Korvaavasta suorituksesta sovitaan moduulin/kokonaisuuden vastuuprofessorin kanssa.  ;5;
 10795;Tfy-99.5111;Biofysiikan ja lääketieteellisen tekniikan erikoistyö;Biophysics and Biomedical Engineering, special assignment;Specialarbete i biofysik och medicinsk teknik;01.08.2015 - 31.07.2016;I, II, III, IV, V (Autumn & Spring), summer;10;
 10794;Tfy-99.4285;Bioelectromagnetism: fundamentals, modelling and application P;Bioelectromagnetism: fundamentals, modelling and application P;Bioelectromagnetism: fundamentals, modelling and application P;01.08.2015 - 31.07.2016;I-II (Autumn), even years;5;
@@ -302,16 +311,20 @@
 8221;NBE-E4120;Cellular Electrophysiology;Cellular Electrophysiology;Cellular Electrophysiology;01.08.2015 - 31.07.2016;I-II (Autumn), even years;5;
 8222;NBE-E4130;Information Processing in Neural Circuits;Information Processing in Neural Circuits;Information Processing in Neural Circuits;01.08.2015 - 31.07.2016;III-V (spring), odd years;5;
 8223;NBE-E4140;Neurophysics;Neurophysics;Neurophysics;25.02.2016 - 19.05.2016;IV-V (spring), even years;5;
+8224;NBE-E4300;Medical Device Innovation;Medical Device Innovation;Medical Device Innovation;10.01.2016 - 22.05.2016;III-V (Spring), even years;5;
 8225;NBE-E5700;Introduction to Cognitive Neuroscience;Introduction to Cognitive Neuroscience;Introduction to Cognitive Neuroscience;05.01.2016 - 09.02.2016;III (Spring);5;
 9358;Tfy-99.2710;Introduction to the Structure and Operation of the Human Brain;Introduction to the Structure and Operation of the Human Brain;Introduction to the Structure and Operation of the Human Brain;14.09.2015 - 01.12.2015;I-II (Autumn). Lectures will start on 14 September.;5;
 9359;Tfy-99.3227;Electromagnetic Field Theory P;Electromagnetic Field Theory P;Electromagnetic Field Theory P;07.09.2015 - 01.12.2015;I-II (odd years);5;
 9360;Tfy-99.3249;Biomedical Engineering, special course P;Biomedical Engineering, special course P;Biomedical Engineering, special course P;13.09.2015 - 22.05.2016;;2-5;
+9364;Tfy-99.3720;Advanced Course on Human Brain Functioning P;Advanced Course on Human Brain Functioning P;Advanced Course on Human Brain Functioning P;24.02.2016 - 18.05.2016;IV-V (Spring);5;
 9367;Tfy-99.4275;Signal Processing in Biomedical Engineering P;Signal Processing in Biomedical Engineering P;Signal Processing in Biomedical Engineering P;24.09.2015 - 04.12.2015;I - II (Autumn);5;
 9372;Tfy-99.7280;Medical Imaging P;Medical Imaging P;Medical Imaging P;11.01.2016 - 30.03.2016;III-IV (Spring), lectured in even years;5;
-15620;PHYS-E0580;Energiatieteiden erikoiskurssi V / Ilmasto.Nyt. lmastonmuutoksen perusteet sekä vaikutukset tekniikkaan ja talouteen;Special Course in Advanced Energy Technologies V / Climate.Now. Basics of climate change and implications on technology and business;Specialkurs i energivetenskaper V / Climate.Now. Basics of climate change and implications on technology and business;10.04.2017 - 19.05.2017;I, II, III, IV, V;1-10;Peter Lund
+15841;PHYS-E0542;Special Course in Theoretical Physics V/Adventures in the Land of Gyrokinetics;Special Course in Theoretical Physics V/Adventures in the Land of Gyrokinetics;Special Course in Theoretical Physics V/Adventures in the Land of Gyrokinetics;02.05.2017 - 12.05.2017;I, II, III, IV, V;3-10;
+15659;PHYS-E0541;Machine Learning in Materials Science;Machine Learning in Materials Science;Machine Learning in Materials Science;23.01.2017 - 30.04.2017;I, II, III, IV, V;3-10;
+15620;PHYS-E0580;Energiatieteiden erikoiskurssi V / Ilmasto.Nyt. llmastonmuutoksen perusteet sekä vaikutukset tekniikkaan ja talouteen;Special Course in Advanced Energy Technologies V / Climate.Now. Basics of climate change and implications on technology and business;Specialkurs i energivetenskaper V / Climate.Now. Basics of climate change and implications on technology and business;10.04.2017 - 19.05.2017;I, II, III, IV, V;1-10;Peter Lund
 15341;PHYS-E0541;Special Course in Physics V/ Gas Phase CNT thin films;Special Course in Physics V/ Gas Phase CNT thin films;Special Course in Physics V/ Gas Phase CNT thin films;03.10.2016 - 25.11.2016;I, II, III, IV, V;3-10;Esko Kauppinen
-15280;;;;;;;
-15285;;;;;;;
+15280;;;;;;;;
+15285;;;;;;;;
 15213;PHYS-E0526;Microscopy of Nanomaterials, laboratory course;Microscopy of Nanomaterials, laboratory course;Microscopy of Nanomaterials, laboratory course;11.10.2016 - 17.12.2016;IV - V (Spring);5;Hua Jiang, Janne Ruokolainen
 14990;Tfy-3.1540;Fysiikan laboratoriotyöt I;Physics, laboratory course I;Laboratoriearbeten i fysik I;13.09.2016 - 18.10.2016;I. Kurssi luennoidaan viimeisen kerran syksyllä 2016.;3;Jani Sainio
 14989;Tfy-3.1530;Fysiikan lyhyet laboratoriotyöt;Concise physics laboratory experiments;Laboratoriearbeten i fysik, kort kurs;13.09.2016 - 04.10.2016;I. Kurssi luennoidaan viimeisen kerran syksyllä 2016.;2;Jani Sainio
@@ -322,7 +335,7 @@
 14708;PHYS-E0582;Special Course in Advanced Energy Technologies 2 V;Special Course in Advanced Energy Technologies 2 V;Special Course in Advanced Energy Technologies 2 V;18.09.2016 - 21.05.2017;I, II, III, IV, V (Autumn and Spring);1-10;
 14707;PHYS-E0580;Energiatieteiden erikoiskurssi V;Special Course in Advanced Energy Technologies V;Specialkurs i energivetenskaper V;18.09.2016 - 21.05.2017;I, II, III, IV, V;1-10;
 14706;PHYS-E0564;Nuclear competence portfolio;Nuclear competence portfolio;Nuclear competence portfolio;18.09.2016 - 21.05.2017;I-V;1;Filip Tuomisto
-14705;PHYS-E0563;Fundamentals of Plasma Physics for Space and Fusion Applications;Fundamentals of Plasma Physics for Space and Fusion Applications;Fundamentals of Plasma Physics for Space and Fusion Applications;03.01.2017 - 18.05.2017;III ¿ V;5;Susan Leerink, Taina Kurki-Suonio
+14705;PHYS-E0563;Fundamentals of Plasma Physics for Space and;Fundamentals of Plasma Physics for Space and;Fundamentals of Plasma Physics for Space and;03.01.2017 - 18.05.2017;III ¿ V;5;Susan Leerink, Taina Kurki-Suonio
 14704;PHYS-E0562;Nuclear Engineering, advanced course;Nuclear Engineering, advanced course;Nuclear Engineering, advanced course;20.02.2017 - 16.05.2017;IV - V (Spring);5;Jaakko Leppänen
 14703;PHYS-E0551;Low Temperature Physics V: Nanoelectronics;Low Temperature Physics V: Nanoelectronics;Low Temperature Physics V: Nanoelectronics;13.09.2016 - 07.12.2016;I, II, III, IV, V (Autumn & Spring);5-6;Gheorghe-Sorin Paraoanu
 14702;PHYS-E0551;Low Temperature Physics V/Theory of superconductivity;Low Temperature Physics V/Theory of superconductivity;Low Temperature Physics V/Theory of superconductivity;10.01.2017 - 29.03.2017;I, II, III, IV, V (Autumn & Spring);5-6;Vladimir Eltsov
@@ -337,7 +350,7 @@
 14693;PHYS-E0436;Modern Optics V;Modern Optics V;Modern Optics V;24.02.2017 - 19.05.2017;IV-V (alternate years, lectured spring 2017);5;Andriy Shevchenko
 14692;PHYS-E0435;Optical Physics;Optical Physics;Optical Physics;16.09.2016 - 09.12.2016;I - II (Autumn);5;Matti Kaivola
 14691;PHYS-E0424;Nanophysics;Nanophysics;Nanophysics;12.09.2016 - 05.12.2016;I - II (Autumn);5;Sebastiaan van Dijken
-14690;PHYS-E0422;Soft Condensed Matter Physics;Soft Condensed Matter Physics;Soft Condensed Matter Physics;02.01.2017 - 29.03.2017;III - IV (Spring);5;Jaakko Timonen, Robin Ras
+14690;PHYS-E0422;Soft Condensed Matter Physics;Soft Condensed Matter Physics;Soft Condensed Matter Physics;02.01.2017 - 05.04.2017;III - IV (Spring);5;Jaakko Timonen, Robin Ras
 14689;PHYS-E0421;Solid-State Physics;Solid-State Physics;Solid-State Physics;20.02.2017 - 23.05.2017;IV-V (Spring);5;Martti Puska
 14688;PHYS-E0417;Experimental Methods in Physics;Experimental Methods in Physics;Experimental Methods in Physics;12.09.2016 - 08.12.2016;I - II (Autumn);5;Mika Sillanpää
 14687;PHYS-E0416;Quantum Physics;Quantum Physics;Quantum Physics;04.01.2017 - 05.04.2017;III - IV (Spring);5;Päivi Törmä
@@ -353,7 +366,7 @@
 14677;PHYS-C0360;Säteilyfysiikka ja -turvallisuus;Radiation Physics and Radiation Safety;Strålningsfysik och -säkerhet;12.09.2016 - 20.10.2016;I-II;5;Filip Tuomisto
 14676;PHYS-C0310;Teknillisen fysiikan laboratoriotyöt;Applied Physics, Laboratory Course;Laboratoriearbeten inom teknisk fysik;06.11.2016 - 21.05.2017;II-V;5;Juha Tuoriniemi
 14675;PHYS-C0240;Materiaalifysiikka;Materials Physics;Materialfysik;06.03.2017 - 01.05.2017;IV - V;5;Martti Puska, Emppu Salonen
-14674;PHYS-C0220;Termodynamiikka ja statistinen fysiikka;Thermodynamics and Statistical Physics;Termodynamik och statistisk fysik;22.02.2017 - 21.04.2017;IV - V;5;Lasse Laurson
+14674;PHYS-C0220;Termodynamiikka ja statistinen fysiikka;Thermodynamics and Statistical Physics;Termodynamik och statistisk fysik;22.02.2017 - 07.04.2017;IV - V;5;Lasse Laurson, Emppu Salonen
 14673;PHYS-C0210;Kvanttimekaniikka;Quantum Mechanics;Kvantmekanik;31.10.2016 - 09.12.2016;II;5;Jani Martikainen
 14672;PHYS-A5130;Elektromagnetism;Electromagnetism;Elektromagnetism;03.01.2017 - 09.02.2017;III;5;Jonatan Slotte
 14671;PHYS-A5120;Termodynamik;Thermodynamics;Termodynamik;01.11.2016 - 08.12.2016;II;5;Jani Sainio, Jonatan Slotte
@@ -378,14 +391,17 @@
 8227;PHYS-A0110;Yliopistofysiikan perusteet (TFM);Introduction to University Physics (TFM);Introduktion till universitetsfysik (TFM);07.09.2015 - 16.10.2015;I;5;
 8229;PHYS-A0120;Termodynamiikka (TFM);Thermodynamics (TFM);Termodynamik (TFM);26.10.2015 - 04.12.2015;II;5;
 8231;PHYS-A0130;Electromagnetism (TFM);Electromagnetism (TFM);Electromagnetism (TFM);04.01.2016 - 12.02.2016;IV (Spring);5;
+8233;PHYS-A0140;Structure of Matter (TFM);Structure of Matter (TFM);Structure of Matter (TFM);;V (Spring);5;
 8235;PHYS-A1110;Yliopistofysiikan perusteet (SCI);Introduction to University Physics (SCI);Introduktion till universitetsfysik (SCI);27.10.2015 - 04.12.2015;II;5;
 8237;PHYS-A1130;Sähkömagnetismi (SCI);Electromagnetism (SCI);Elektromagnetism (SCI);04.01.2016 - 12.02.2016;III;5;
 8239;PHYS-A1140;Aineen rakenne (SCI);Structure of Matter (SCI);Materiens struktur (SCI);23.02.2016 - 01.04.2016;IV;5;
 8241;PHYS-A2120;Termodynamiikka (CHEM);Thermodynamics (CHEM);Termodynamik (CHEM);05.01.2016 - 12.02.2016;III;5;
 8243;PHYS-A2140;Aineen rakenne (CHEM);Structure of Matter (CHEM);Materiens struktur (CHEM);09.09.2015 - 04.12.2015;I - II ;5;
+8245;PHYS-A3121;Termodynamiikka (ENG1);Thermodynamics (ENG1);Termodynamik (ENG1);08.09.2015 - 16.10.2015;I;5;
 8246;PHYS-A3122;Termodynamiikka (ENG2);Thermodynamics (ENG2);Termodynamik (ENG2);27.10.2015 - 04.12.2015;II;5;
 8248;PHYS-A3131;Sähkömagnetismi (ENG1);Electromagnetism (ENG1);Elektromagnetism (ENG1);04.01.2016 - 12.02.2016;III;5;
 8249;PHYS-A3132;Sähkömagnetismi (ENG2);Electromagnetism (ENG2);Elektromagnetism (ENG2);23.02.2016 - 01.04.2016;IV;5;
+8251;PHYS-A5120;Termodynamik;Thermodynamics;Termodynamik;27.10.2015 - 04.12.2015;II;5;
 8253;PHYS-A5130;Elektromagnetism;Electromagnetism;Elektromagnetism;04.01.2016 - 11.02.2016;III;5;
 8255;PHYS-A5140;Materiens struktur;Structure of Matter;Materiens struktur;23.02.2016 - 01.04.2016;I; Kurssi luennoidaan seuraavan kerran lukuvuonna 2017-2018;5;
 8257;PHYS-C0210;Kvanttimekaniikka;Quantum Mechanics;Kvantmekanik;26.10.2015 - 04.12.2015;II;5;
@@ -401,12 +417,15 @@
 8276;PHYS-E0412;Computational Physics;Computational Physics;Computational Physics;12.01.2016 - 19.05.2016;III - V (Spring);5;
 8278;PHYS-E0413;Theoretical Mechanics;Theoretical Mechanics;Theoretical Mechanics;08.09.2015 - 07.12.2015;I-II (Autumn);5;
 8280;PHYS-E0414;Advanced Quantum Mechanics;Advanced Quantum Mechanics;Advanced Quantum Mechanics;08.09.2015 - 03.12.2015;I-II (Autumn);5;
-8282;;;;;;;
+8282;;;;;;;;
 8284;PHYS-E0416;Quantum Physics;Quantum Physics;Quantum Physics;08.01.2016 - 08.04.2016;III - IV (Spring);5;
 8286;PHYS-E0417;Experimental Methods in Physics;Experimental Methods in Physics;Experimental Methods in Physics;07.09.2015 - 03.12.2015;I - II (Autumn);5;
 8287;PHYS-E0418;Advanced Statistical Physics;Advanced Statistical Physics;Advanced Statistical Physics;03.03.2016 - 19.05.2016;The course is not lectured 2016-2017.;5;
 8289;PHYS-E0421;Solid-State Physics;Solid-State Physics;Solid-State Physics;22.02.2016 - 20.05.2016;IV-V (Spring);5;
+8291;PHYS-E0422;Soft Condensed Matter Physics;Soft Condensed Matter Physics;Soft Condensed Matter Physics;04.01.2016 - 30.03.2016;III - IV (Spring);5;
 8292;PHYS-E0423;Surface Physics;Surface Physics;Surface Physics;05.01.2016 - 30.03.2016;III- IV (Lectured every other year, next time in the academic year 2017-2018.);5;
+8295;PHYS-E0435;Optical Physics;Optical Physics;Optical Physics;11.09.2015 - 04.12.2015;I - II (Autumn);5;
+8297;PHYS-E0437;Laser Physics;Laser Physics;Laser Physics;26.02.2016 - 20.05.2016;IV-V (alternate years, not lectured 2016-2017);5;
 8302;PHYS-E0463;Fusion Energy Technology;Fusion Energy Technology;Fusion Energy Technology;04.01.2016 - 30.03.2016;III-IV (Spring);5;
 8305;PHYS-E0483;Advances in New Energy Technologies;Advances in New Energy Technologies;Advances in New Energy Technologies;08.01.2016 - 01.04.2016;III -IV (Spring);5;
 8307;PHYS-E0525;Microscopy of Nanomaterials;Microscopy of Nanomaterials;Microscopy of Nanomaterials;05.01.2016 - 29.03.2016;III - IV (Spring);5;
@@ -427,6 +446,13 @@
 9355;Tfy-3.1540;Fysiikan laboratoriotyöt I;Physics, laboratory course I;Laboratoriearbeten i fysik I;26.10.2015 - 20.05.2016;I. Kurssi luennoidaan viimeisen kerran syksyllä 2016.;3;
 8298;PHYS-E0441;Physics Special Assignment V;Physics Special Assignment V;Physics Special Assignment V;01.08.2016 - 31.07.2017;According to agreement;10;
 8303;PHYS-E0481;Energiatieteiden erikoistyö V;Advanced Energy Technologies, special assignment V;Specialarbeten i energivetenskaper V;01.08.2016 - 31.07.2017;I, II, III, IV, V;10;
+16139;CS-E4920;Portfolio in Software and Service Engineering (V);Portfolio in Software and Service Engineering (V);Portfolio in Software and Service Engineering (V);06.09.2017 - 06.09.2017;I, III, V (separate iterations in each).;1-5;Marjo Kauppinen, Jari Vanhanen
+15878;CS-E4004;Individual Studies in Computer Science: Textbooks as Self-Study;Individual Studies in Computer Science: Textbooks as Self-Study;Individual Studies in Computer Science: Textbooks as Self-Study;01.08.2016 - 31.07.2017;Agreed with the teacher.;1-10;Tuomas Aura
+15831;CS-E4002;Special Course in Computer Science: Genetic Algorithms;Special Course in Computer Science: Genetic Algorithms;Special Course in Computer Science: Genetic Algorithms;07.08.2017 - 18.08.2017;Announced later.;1-10;Jorma Tarhio
+15809;CS-E4002;Special Course in Computer Science: The Internet of Things: selected themes;Special Course in Computer Science: The Internet of Things: selected themes;Special Course in Computer Science: The Internet of Things: selected themes;19.04.2017 - 17.05.2017;Announced later.;1-10;Mario Di Francesco
+15757;CS-E4002;Special Course in Computer Science: Digital Humanities Hackathon;Special Course in Computer Science: Digital Humanities Hackathon;Special Course in Computer Science: Digital Humanities Hackathon;15.05.2017 - 19.05.2017;Announced later.;1-10;Jukka Suomela
+15756;CS-A1111;Ohjelmoinnin peruskurssi Y1 (kesäkurssi);Basic Course in Programming Y1 (summer course);Grundkurs i programmering Y1 (sommarkurs);05.06.2017 - 15.08.2017;I-II;5;Kerttu Pollari-Malmi
+15648;CS-E5110;Management of a Technology Venture;Management of a Technology Venture;Management of a Technology Venture;17.07.2017 - 11.08.2017;I-II (Autumn). Lectures start in the middle of period I (after the course CS-E5100 Introduction to IT Business and Venturing lectures).  ;5;Timo Nyberg
 15615;CS.thes;Diplomityö;Master's Thesis;Diplomarbete;01.01.2017 - 31.08.2017;;30;Petri Vuorimaa
 15596;CS-E4060;Seminar Course on Approximate Bayesian Computation;Seminar Course on Approximate Bayesian Computation;Seminar Course on Approximate Bayesian Computation;13.01.2017 - 21.04.2017;I-V;3-10;Henri Vuollekoski
 15593;CS-E4004;Reading Circle on Bayesian Inference;Reading Circle on Bayesian Inference;Reading Circle on Bayesian Inference;02.01.2017 - 19.05.2017;Agreed with the teacher.;1-10;Aki Vehtari
@@ -438,7 +464,7 @@
 15370;CS-E5470;Seminar on Embedded Systems;Seminar on Embedded Systems;Seminar on Embedded Systems;03.11.2016 - 09.12.2016;According to agreement;3-10;Vesa Hirvisalo
 15358;CS-E5001;Research Seminar in Software and Service Engineering;Research Seminar in Software and Service Engineering;Research Seminar in Software and Service Engineering;31.10.2016 - 05.12.2016;I - II (Autumn), III - V (Spring);5;Martti Mäntylä
 15339;CS-E4002;Special Course in Computer Science: Query Optimization and Processing;Special Course in Computer Science: Query Optimization and Processing;Special Course in Computer Science: Query Optimization and Processing;31.10.2016 - 08.12.2016;Announced later.;1-10;Boris Novikov
-15238;CS-E4870;Research Project in Machine Learning and Data Science;Research Project in Machine Learning and Data Science;Research Project in Machine Learning and Data Science;21.09.2016 - 14.12.2016;I - II (Autumn);5-10;Aristides Gionis, Venkata Garimella
+15238;CS-E4870;Research Project in Machine Learning and Data Science;Research Project in Machine Learning and Data Science;Research Project in Machine Learning and Data Science;21.09.2016 - 14.12.2016;I - II (Autumn);5-10;Aristides Gionis, Kiran Garimella
 15228;CS-E4630;Hajautetut tietokannat;Distributed Databases;Distribuerade databaser;31.10.2016 - 17.12.2016;II;5;Eljas Soisalon-Soininen, Sami El-Mahgary
 15216;CS-E4004;Individual Studies in Computer Science;Individual Studies in Computer Science;Individual Studies in Computer Science;05.09.2016 - 27.05.2017;Agreed with the teacher.;1-10;Petri Vuorimaa
 15215;CS-E4003;Special Assignment in Computer Science;Special Assignment in Computer Science;Special Assignment in Computer Science;05.09.2016 - 27.05.2017;Agreed with the teacher.;1-10;Petri Vuorimaa
@@ -466,8 +492,8 @@
 13132;CS-E5500;Acoustical Measurements;Acoustical Measurements;Acoustical Measurements;31.10.2016 - 07.12.2016;II (Autumn);5;Tapio Lokki
 13130;CS-E5460;Project in Embedded Systems;Project in Embedded Systems;Project in Embedded Systems;02.01.2017 - 19.05.2017;I - II (Autumn), III - V (Spring);5-10;Vesa Hirvisalo
 13129;CS-E5460;Project in Embedded Systems;Project in Embedded Systems;Project in Embedded Systems;12.09.2016 - 09.12.2016;I - II (Autumn), III - V (Spring);5-10;Vesa Hirvisalo
-13127;CS-E5440;Growth and Internationalization of Technology SMEs;Growth and Internationalization of Technology SMEs;Growth and Internationalization of Technology SMEs;13.04.2017 - 18.05.2017;V (Spring);4;Olli Mutanen
-13125;CS-E5420;ICT Innovation I & E Thesis;ICT Innovation I&E Thesis;ICT Innovation I&E Thesis;12.09.2016 - 19.05.2017;This I&E Study course is part of the EIT Digital I&E Minor.is offered in periods I and II for the 2nd year EIT students.;6;Olli Mutanen
+13127;CS-E5440;Growth and Internationalization of Technology SMEs;Growth and Internationalization of Technology SMEs;Growth and Internationalization of Technology SMEs;13.04.2017 - 08.06.2017;V (Spring);4;Olli Mutanen
+13125;CS-E5420;ICT Innovation I & E Thesis;ICT Innovation I&E Thesis;ICT Innovation I&E Thesis;12.09.2016 - 08.06.2017;This I&E Study course is part of the EIT Digital I&E Minor.is offered in periods I and II for the 2nd year EIT students.;6;Olli Mutanen
 13123;CS-E5400;Tietojärjestelmien hankinta ja hankejohtaminen;IS Procurement and Portfolio management;Anskaffande av och portföljhantering för datasystem;21.02.2017 - 28.03.2017;IV;4-6;Martti Mäntylä, Kari Hiekkanen
 13122;CS-E5390;Seminar on Law and Technology;Seminar on Law and Technology;Seminar on Law and Technology;13.03.2017 - 05.05.2017;IV-V (Spring);3-6;Timo Nyberg
 13120;CS-E5370;Law in Digital Society;Law in Digital Society;Law in Digital Society;20.02.2017 - 30.03.2017;IV (Spring);5-6;Nomi Byström
@@ -488,9 +514,9 @@
 13099;CS-E4960;Software Testing and Quality Assurance;Software Testing and Quality Assurance;Software Testing and Quality Assurance;14.09.2016 - 07.12.2016;II-III;5;Juha Itkonen
 13098;CS-E4950;Software Architectures;Software Architectures;Software Architectures;11.01.2017 - 26.04.2017;III-V (Spring);5;Kari Smolander
 13097;CS-E4940;Requirements Engineering;Requirements Engineering;Requirements Engineering;23.01.2017 - 28.04.2017;III ¿ V (Spring);5;Marjo Kauppinen
-13096;CS-E4930;Software Processes and Projects;Software Processes and Projects;Software Processes and Projects;03.03.2017 - 19.05.2017;IV-V (Spring);5;Maria Paasivaara
+13096;CS-E4930;Software Processes and Projects;Software Processes and Projects;Software Processes and Projects;03.03.2017 - 02.06.2017;IV-V (Spring);5;Ville Heikkilä, Maria Paasivaara
 13095;CS-E4920;Portfolio in Software and Service Engineering;Portfolio in Software and Service Engineering;Portfolio in Software and Service Engineering;07.09.2016 - 27.05.2017;I, III, V (separate iterations in each).;1-5;Marjo Kauppinen, Jari Vanhanen
-13094;CS-E4910;Software Project 3;Software Project 3;Software Project 3;14.09.2016 - 11.04.2017;I-V (Autumn & Spring);5-8;Casper Lassenius, Jari Vanhanen
+13094;CS-E4910;Software Project 3;Software Project 3;Software Project 3;14.09.2016 - 19.04.2017;I-V (Autumn & Spring);5-8;Casper Lassenius, Jari Vanhanen
 13093;CS-E4900;User-Centered Methods for Product and Service Design;User-Centered Methods for Product and Service Design;User-Centered Methods for Product and Service Design;12.09.2016 - 12.12.2016;I ¿ II (Autumn);5;Mika Nieminen
 13091;CS-E4860;Special Course in Bioinformatics II;Special Course in Bioinformatics II;Special Course in Bioinformatics II;20.02.2017 - 15.05.2017;IV - V (Spring);3-10;Juho Rousu
 13090;CS-E4850;Computer Vision;Computer Vision;Computer Vision;02.01.2017 - 31.03.2017;III - IV (Spring);5;Juho Kannala
@@ -520,7 +546,7 @@
 13065;CS-E4400;Design of WWW Services;Design of WWW Services;Design of WWW Services;12.09.2016 - 16.12.2016;I ¿ II (Autumn 2016);5;Petri Vuorimaa
 13064;CS-E4330;Special Course in Information Security - Reverse Engineering Malware;Special Course in Information Security - Reverse Engineering Malware;Special Course in Information Security - Reverse Engineering Malware;11.01.2017 - 05.04.2017;I-II, III-IV, V;2-10;Tuomas Aura
 13063;CS-E4320;Cryptography and Data Security;Cryptography and Data Security;Cryptography and Data Security;12.09.2016 - 08.12.2016;I - II (Autumn);5;
-13062;CS-E4310;Mobile Systems Security;Mobile Systems Security;Mobile Systems Security;10.01.2017 - 06.04.2017;III-IV;5;N Asokan
+13062;CS-E4310;Mobile Systems Security;Mobile Systems Security;Mobile Systems Security;10.01.2017 - 21.03.2017;III-IV;5;N Asokan
 13061;CS-E4300;Network Security;Network Security;Network Security;01.11.2016 - 15.12.2016;II;5;Tuomas Aura
 13060;CS-E4240;Johdatus kääntäjätekniikkaan;Introduction to Compiling;Introduktion till kompilatorer;13.09.2016 - 07.12.2016;I - II;5;Jorma Tarhio
 13059;CS-E4230;Transaction Management in Databases;Transaction Management in Databases;Transaction Management in Databases;22.02.2017 - 30.03.2017;IV (Spring);5;Eljas Soisalon-Soininen
@@ -550,7 +576,7 @@
 13025;CS-C3110;Datasta tietoon;From Data to Knowledge;Från data till information;31.10.2016 - 09.12.2016;II - III, luennot periodilla II ja itsenäinen harjoitustyö periodilla III;5;Jaakko Hollmén
 13024;CS-C3100;Computer Graphics;Computer Graphics;Computer Graphics;12.09.2016 - 21.12.2016;I-II (Autumn 2016);5;Jaakko Lehtinen
 13023;CS-C2150;Theoretical Computer Science;Theoretical Computer Science;Theoretical Computer Science;03.01.2017 - 31.03.2017;III - IV (Spring);5;Viorel Preoteasa
-13022;CS-C2140;Ohjelmistoprojekti 2;Software Project 2;Programvaruprojekt 2;02.01.2017 - 28.04.2017;III-V;5;Jari Vanhanen
+13022;CS-C2140;Ohjelmistoprojekti 2;Software Project 2;Programvaruprojekt 2;02.01.2017 - 19.04.2017;III-V;5;Jari Vanhanen
 13021;CS-C2130;Ohjelmistoprojekti 1;Software Project 1;Programvaruprojekt 1;14.09.2016 - 14.12.2016;I-II;5;Jari Vanhanen
 13020;CS-C2120;Ohjelmointistudio 2: projekti;Programming Studio 2: Project;Programmeringsstudio 2: project;04.01.2017 - 10.05.2017;III-V;5;Juha Sorva, Otto Seppälä
 13019;CS-C2110;Ohjelmointistudio 1: mediaohjelmointi;Programming Studio 1: Media Programming;Programmeringsstudio 1: mediaprogrammering;12.09.2016 - 03.02.2017;I-III;5;Sanna Suoranta, Lauri Savioja
@@ -616,7 +642,7 @@
 10377;Becs-114.3250;Special Course in Computational Science P;Special Course in Computational Science P;Special Course in Computational Science P;01.08.2015 - 31.07.2016;III - IV;6;
 10376;Becs-114.3215;Laskennallisen tekniikan erikoistyö;Special Project in Computational Engineering;Specialproject i datorbaserad teknik;01.08.2015 - 31.07.2016;I, II, III, IV, V;3-8;
 10375;Becs-114.2240;Seminar on Computational Engineering;Seminar on Computational Engineering;Seminar on Computational Engineering;01.08.2015 - 31.07.2016;III - IV;3;
-10111;;;;;;;
+10111;;;;;;;;
 4367;Becs-114.1100;Computational Science;Computational Science;Computational Science;08.09.2015 - 03.12.2015;I - II;5;
 4379;Becs-114.4150;Complex Networks L;Complex Networks L;Complex Networks L;28.10.2015 - 03.12.2015;II (Autumn);5;
 4391;Becs-114.5312;Work Course on Bayesian Analysis;Work Course on Bayesian Analysis;Work Course on Bayesian Analysis;28.02.2016 - 22.05.2016;IV, V;2;
@@ -651,6 +677,7 @@
 4632;CSE-E4660;ICT Enabled Service Business and Innovation;ICT Enabled Service Business and Innovation;ICT Enabled Service Business and Innovation;06.10.2015 - 03.12.2015;I-II (lectures begin most likely on fifth week of period I; check course web pages for confirmation);5;
 4633;CSE-E4670;Introduction to Industrial Internet;Introduction to Industrial Internet;Introduction to Industrial Internet;25.02.2016 - 31.03.2016;IV (Spring);5;
 4634;CSE-E4675;Systems of Systems;Systems of Systems;Systems of Systems;14.04.2016 - 19.05.2016;V;5;
+4635;CSE-E4680;Law in Digital Society;Law in Digital Society;Law in Digital Society;22.02.2016 - 31.03.2016;IV (Spring);5-6;
 4637;CSE-E4751;Introduction to IT Business and Venturing;Introduction to IT Business and Venturing;Introduction to IT Business and Venturing;15.09.2015 - 29.11.2015;I-II (Autumn);2;
 4638;CSE-E4755;Management of a Technology Venture;Management of a Technology Venture;Management of a Technology Venture;07.10.2015 - 02.12.2015;I-II (Autumn). Lectures start in the middle of period I (after the course CSE-E4751 lectures).;6;
 4639;CSE-E5000;Seminar on Software Systems, Technologies and Security;Seminar on Software Systems, Technologies and Security;Seminar on Software Systems, Technologies and Security;07.09.2015 - 11.12.2015;I-II, III-V;5;
@@ -751,6 +778,7 @@
 8916;T-79.5501;Cryptology P;Cryptology P;Cryptology L;07.01.2016 - 08.04.2016;III - IV (Spring);5;
 8921;T-86.2010;Tietojärjestelmien hankinta ja hankejohtaminen;IS Procurement and Portfolio management;Anskaffande av och portföljhantering för datasystem;23.02.2016 - 29.03.2016;IV;4-6;
 8747;T-106.4200;Johdatus kääntäjätekniikkaan;Introduction to Compiling;Introduktion till kompilatorer;08.09.2015 - 02.12.2015;I - II;5;
+8749;T-106.5221;Transaction Management in Databases P;Transaction Management in Databases P;Transaction Management in Databases P;24.02.2016 - 31.03.2016;IV (Spring);5;
 8753;T-106.5300;Embedded Systems;Embedded Systems;Embedded Systems;12.01.2016 - 29.03.2016;III - V;5;
 8754;T-106.5320;ICT Innovation Summer School P;ICT Innovation Summer School P;ICT Innovation Summer School P;01.08.2015 - 31.07.2016;Summer;3-9;
 8756;T-106.5400;String Algorithms P;String Algorithms P;String Algorithms P;18.01.2016 - 17.03.2016;III - IV (Spring, Offered alternate years, taught in the academic year 2015-2016);5-6;
@@ -776,25 +804,31 @@
 8807;T-111.5025;Äänisuunnittelu;Sound Design;Ljudplanering;13.01.2016 - 30.03.2016;III - V (Luennoidaan vuorovuosin; luennoidaan lukuvuonna 2015 - 2016);3;
 8809;T-111.5077;Special Project on Content Production P;Special Project on Content Production P;Special Project on Content Production P;28.10.2015 - 09.12.2015;I - V;6-9;
 8813;T-111.5360;WWW Applications P;WWW Applications P;WWW Applications P;08.09.2015 - 08.12.2015;I - II;4;
+16043;TU-C3010;Projektien suunnittelu ja ohjaus;Introduction to Project Management;Projektplanering och projektstyrning;01.08.2017 - 31.08.2017;III-IV (kevät 2017);5;Karlos Artto
+16022;TU-CV;Vanhustenhoidon innovaatiot;Vanhustenhoidon innovaatiot;Vanhustenhoidon innovaatiot;01.06.2017 - 01.06.2017;;0;Esa Saarinen
+15996;TU-C2020;Operaatioiden johtaminen;Operations Management;Operativ verksamhetsledning;13.06.2017 - 31.08.2017;I - II (syksy 2016);5;Timo Seppälä
+15927;TU-C2010;Introduction to Strategic Management;Introduction to Strategic Management;Introduction to Strategic Management;05.06.2017 - 30.08.2017;I-II (Autumn 2016) ;5;Jens Schmidt
+15832;SCI022Z-LZ;Postgraduate studies: Docjam course 2017;Postgraduate studies: Docjam course 2017;Postgraduate studies: Docjam course 2017;21.04.2017 - 21.04.2017;;0;Eila Järvenpää
 15643;TU-E5001;Innovation Management;Innovation Management;Innovation Management;28.02.2017 - 30.03.2017;IV (Spring 2017);5;Niina Nurmi, Anssi Smedlund
+15565;;;;;;;;
 15527;TU-E2110;Innovation in Operations and Services;Innovation in Operations and Services;Innovation in Operations and Services;20.01.2017 - 07.04.2017;III-IV (Spring 2017);3-5;Jan Holmström, Risto Rajala
-15256;;;;;;;
+15256;;;;;;;;
 15503;TU-CV;Vaihtuvasisältöinen opinto: Tempaus 2016;Course with Varying Content: Tempaus 2016;Studier med varierande innehåll: Tempaus 2016;20.10.2016 - 31.12.2016;;0;Eila Järvenpää
 15351;TU-EV;Nordiska skolan inom marknadsföring;Nordiska skolan inom marknadsföring;Nordiska skolan inom marknadsföring;08.11.2016 - 21.11.2016;;0;Pia Rydestedt
 15350;TU-EV;Lean Six Sigma Green Belt;Lean Six Sigma Green Belt;Lean Six Sigma Green Belt;31.10.2016 - 09.12.2016;;0;Paul Lillrank
 15318;TU-E3160;Learning and Learning Environments;Learning and Learning Environments;Learning and Learning Environments;31.10.2016 - 05.12.2016;I, II, III, IV or V (Varies, check the course website for details);1-10;Matti Vartiainen
 15244;TU-E3160;Slush Leadership Experience;Slush Leadership Experience;Slush Leadership Experience;01.09.2016 - 27.01.2017;I, II, III, IV or V (Varies, check the course website for details);1-10;Jari Ylitalo, Matti Vartiainen
 15096;SCI3026.kand;Kandidaatintyö ja seminaari (Informaatioverkostot);Kandidaatintyö ja seminaari (Informaatioverkostot);Kandidaatintyö ja seminaari (Informaatioverkostot);13.09.2016 - 07.12.2016;I-II (syksy 2016), III-V (kevät 2017);10;Miia Jaatinen
-12136;;;;;;;
+12136;;;;;;;;
 15064;TU-L0010;Advanced Organizational Theory;Advanced Organizational Theory;Advanced Organizational Theory;16.09.2016 - 02.12.2016;I-II (Autumn 2016);5;Mikko Jääskeläinen
 15030;TU-E4040;Opportunity Prototyping;Opportunity Prototyping;Opportunity Prototyping;13.09.2016 - 18.10.2016;I (Autumn 2016);3;Peter Kelly
 14988;TU-L2040;Research Perspectives on Inter-organizational Collaboration;Research Perspectives on Inter-organizational Collaboration;Research Perspectives on Inter-organizational Collaboration;14.09.2016 - 07.12.2016;I-II (Autumn 2016);5;Miia Jaatinen
 14987;TU-L2010;Videoanalyysi organisaatioiden yhteiskehittämisen tutkimuksessa;Video analysis in the research of organizational co-creation;Videoanalys i forskning av organisationernas samverkande utveckling;10.01.2017 - 28.02.2017;I-II (syksy 2016);5;Laura Kohonen-Aho, Riitta Smeds
 14986;TU-L1010;Theory Building and Research Design in Strategy and Venturing;Theory Building and Research Design in Strategy and Venturing;Theory Building and Research Design in Strategy and Venturing;16.01.2017 - 20.03.2017;III-IV (Spring 2017);5;Markku Maula
-14985;TU-L1000;Doctoral Seminar in Strategy;Doctoral Seminar in Strategy;Doctoral Seminar in Strategy;20.02.2017 - 09.05.2017;IV-V (Spring 2017);8;Robin Gustafsson
+14985;TU-L1000;Doctoral Seminar in Strategy;Doctoral Seminar in Strategy;Doctoral Seminar in Strategy;21.03.2017 - 31.05.2017;IV-V (Spring 2017);8;Robin Gustafsson
 14983;TU-L0000;Research Methods in Industrial Engineering and Management;Research Methods in Industrial Engineering and Management;Research Methods in Industrial Engineering and Management;12.09.2016 - 20.01.2017;I-II (Autumn 2016);5;Henri Schildt
 14982;TU-EV;Johdanto sosiaali- ja terveydenhuollon johtamiseen;Introduction to Management of Healthcare and Social Services;Inledning till social- och hälsovårdsledning;01.11.2016 - 07.12.2016;;0;Paulus Torkki
-14981;TU-E6140;Yrityspeli;Business Game;Företagsspel;24.04.2017 - 24.05.2017;I, II, III, IV, V (lukuvuosi 2016-2017);3;Riitta Smeds
+14981;TU-E6140;Yrityspeli;Business Game;Företagsspel;24.04.2017 - 24.05.2017;I, II, III, IV, V (lukuvuosi 2016-2017);3;Ngoc Le, Riitta Smeds
 14980;TU-E6140;Yrityspeli;Business Game;Företagsspel;17.10.2016 - 02.12.2016;I, II, III, IV, V (lukuvuosi 2016-2017);3;Juuso Töyli, Riitta Smeds
 14979;TU-E6130;Facilitating Collaboration in Networks;Facilitating Collaboration in Networks;Facilitating Collaboration in Networks;15.09.2016 - 31.01.2017;I-V (academic year 2016-2017);5;Miia Jaatinen, Antero Hirvensalo
 14978;TU-E6120;Co-development Interventions in Business Networks;Co-development Interventions in Business Networks;Co-development Interventions in Business Networks;13.01.2017 - 31.03.2017;III-IV (Spring 2017);5;Miia Jaatinen
@@ -802,26 +836,27 @@
 14976;TU-E6080;Diplomityöseminaari;Master's Thesis Seminar;Diplomarbetsseminarium;22.09.2016 - 25.05.2017;I-V (lukuvuosi 2016-2017);1-2;Riitta Smeds
 14975;TU-E6010;Philosophy;Philosophy;Philosophy;21.09.2016 - 16.11.2016;I-II (Autumn 2016);3;Kai Alhanen
 14973;TU-E4110;Aalto Fellows;Aalto Fellows;Aalto Fellows;08.05.2017 - 19.05.2017;V (Spring 2017);5;Olli Vuola
-14972;TU-E4100;Startup Experience;Startup Experience;Startup Experience;11.01.2017 - 31.03.2017;III-IV (Spring 2017);9;Olli Mutanen, Kalle Airo, Carl Mitts
+14972;TU-E4100;Startup Experience;Startup Experience;Startup Experience;11.01.2017 - 14.04.2017;III-IV (Spring 2017);9;Olli Mutanen, Kalle Airo, Carl Mitts
 14971;TU-E4090;Managing Innovative Sales, exercises;Managing Innovative Sales, exercises;Managing Innovative Sales, exercises;01.12.2016 - 02.12.2016;II (Autumn 2016);3;Petri Parvinen
 14970;TU-E4080;Managing Innovative Sales;Managing Innovative Sales;Managing Innovative Sales;31.10.2016 - 05.12.2016;II (Autumn 2016);3;Petri Parvinen
-14969;TU-E4070;Entrepreneurial Marketing;Entrepreneurial Marketing;Entrepreneurial Marketing;11.04.2017 - 18.05.2017;V (Spring 2017);5;Jukka Partanen
+14969;TU-E4070;Entrepreneurial Marketing;Entrepreneurial Marketing;Entrepreneurial Marketing;11.04.2017 - 24.05.2017;V (Spring 2017);5;Jukka Partanen
 14968;TU-E4060;Design & Innovation in Context;Design & Innovation in Context;Design & Innovation in Context;03.11.2016 - 08.12.2016;II (Autumn 2016);6;Peter Kelly
+14967;TU-E4050;Entrepreneurial Leadership;Entrepreneurial Leadership;Entrepreneurial Leadership;02.01.2017 - 10.02.2017;III (Spring 2017);5;Aino Tenhiälä
 14966;TU-E4030;Entrepreneurial Finance;Entrepreneurial Finance;Entrepreneurial Finance;23.02.2017 - 30.03.2017;IV (Spring 2017);5;Peter Kelly
-14964;TU-E3150;Safety Management in Complex Sociotechnical Systems;Safety Management in Complex Sociotechnical Systems;Safety Management in Complex Sociotechnical Systems;23.02.2017 - 18.05.2017;IV ¿ V (Spring 2017);5;Matti Vartiainen
+14964;TU-E3150;Safety Management in Complex Sociotechnical Systems;Safety Management in Complex Sociotechnical Systems;Safety Management in Complex Sociotechnical Systems;23.02.2017 - 26.05.2017;IV ¿ V (Spring 2017);5;Matti Vartiainen
 14963;TU-E3130;Luovan ongelmanratkaisun seminaari;Seminar on Creative Problem Solving;Seminarium i kreativ problemlösning;14.09.2016 - 07.12.2016;I ¿ II (syksy 2016);5-8;Esa Saarinen, Anni-Emilia Pesonen
 14962;TU-E3120;Human Resources in Service Operations;Human Resources in Service Operations;Human Resources in Service Operations;14.09.2016 - 14.12.2016;I-II (Autumn 2016);5;Matti Vartiainen
-14961;TU-E3110;Work Design in Organizations;Work Design in Organizations;Work Design in Organizations;03.01.2017 - 28.03.2017;III ¿ IV (Spring 2017);5;Matti Vartiainen
-14960;TU-E3090;Research Assignment in Leadership and Knowledge Management;Research Assignment in Leadership and Knowledge Management;Research Assignment in Leadership and Knowledge Management;05.01.2017 - 27.05.2017;I-II (Autumn 2016), III-V (Spring 2017);5;Eerikki Mäki
+14961;TU-E3110;Work Design in Organizations;Work Design in Organizations;Work Design in Organizations;03.01.2017 - 07.04.2017;III ¿ IV (Spring 2017);5;Matti Vartiainen
+14960;TU-E3090;Research Assignment in Leadership and Knowledge Management;Research Assignment in Leadership and Knowledge Management;Research Assignment in Leadership and Knowledge Management;05.01.2017 - 08.05.2017;I-II (Autumn 2016), III-V (Spring 2017);5;Eerikki Mäki
 14959;TU-E3090;Research Assignment in Leadership and Knowledge Management;Research Assignment in Leadership and Knowledge Management;Research Assignment in Leadership and Knowledge Management;14.09.2016 - 17.12.2016;I-II (Autumn 2016), III-V (Spring 2017);5;Eerikki Mäki
 14958;TU-E3040;Human Potential;Human Potential;Human Potential;11.01.2017 - 29.03.2017;III ¿ IV (Spring 2017);5;Niina Nurmi, Johanna Koroma
 14957;TU-E3030;Collaboration in Networks;Collaboration in Networks;Collaboration in Networks;13.09.2016 - 29.11.2016;I ¿ II (Autumn 2016);5;Marko Hakonen
 14956;TU-E3020;Knowledge Management in Practice;Knowledge Management in Practice;Knowledge Management in Practice;12.09.2016 - 19.12.2016;I ¿ II (Autumn 2016);5;Eerikki Mäki
 14955;TU-E3010;Leading as practice;Leading as practice;Leading as practice;12.01.2017 - 30.03.2017;III - V (Spring 2017);5;Jari Ylitalo
-14954;TU-E2220;Financial Engineering II;Financial Engineering II;Financial Engineering II;12.04.2017 - 19.05.2017;V (Spring 2017);3-6;Ruth Kaila
+14954;TU-E2220;Financial Engineering II;Financial Engineering II;Financial Engineering II;12.04.2017 - 03.05.2017;V (Spring 2017);3-6;Ruth Kaila
 14953;TU-E2210;Financial Engineering I;Financial Engineering I;Financial Engineering I;11.01.2017 - 07.04.2017;III-IV (Spring 2017);3-6;Ruth Kaila
 14952;TU-E2130;Operations Management for New Ventures;Operations Management for New Ventures;Operations Management for New Ventures;02.01.2017 - 10.02.2017;III-IV (Spring 2017);3-5;Jouko Karjalainen
-14951;TU-E2120;Project Business;Project Business;Project Business;11.01.2017 - 29.03.2017;III-IV (Spring 2017);3-5;Jere Lehtinen
+14951;TU-E2120;Project Business;Project Business;Project Business;11.01.2017 - 05.04.2017;III-IV (Spring 2017);3-5;Jere Lehtinen
 14950;TU-E2090;Research Assignment in Operations and Service Management;Research Assignment in Operations and Service Management;Research Assignment in Operations and Service Management;05.01.2017 - 27.05.2017;I-II, III-V (Autumn 2016 and Spring 2017);5-7;Kari Tanskanen
 14949;TU-E2090;Research Assignment in Operations and Service Management;Research Assignment in Operations and Service Management;Research Assignment in Operations and Service Management;14.09.2016 - 18.02.2017;I-II, III-V (Autumn 2016 and Spring 2017);5-7;Kari Tanskanen
 14948;TU-E2040;Management of External Resources;Management of External Resources;Management of External Resources;12.09.2016 - 19.10.2016;I (Autumn 2016);3-5;Kari Tanskanen
@@ -831,10 +866,11 @@
 14944;TU-E2000;Aalto Introduction to Services;Aalto Introduction to Services;Aalto Introduction to Services;13.09.2016 - 20.10.2016;I (Autumn 2016);3-6;Paul Lillrank
 14943;TU-E1160;International Economics;International Economics;International Economics;20.02.2017 - 31.03.2017;IV (course to be given for the final time in the Spring 2017);5;Hannele Wallenius
 14942;TU-E1150;Managerial Economics;Managerial Economics;Managerial Economics;10.01.2017 - 02.02.2017;III (course to be given for the final time in the Spring 2017);5;Hannele Wallenius
-14941;TU-E1140;Contracting in Strategy and Venturing;Contracting in Strategy and Venturing;Contracting in Strategy and Venturing;22.02.2017 - 29.03.2017;IV (Spring 2017);2;Markku Maula
+14941;TU-E1140;Contracting in Strategy and Venturing;Contracting in Strategy and Venturing;Contracting in Strategy and Venturing;15.03.2017 - 06.04.2017;IV (Spring 2017);2;Markku Maula
 14940;TU-E1131;Financial Modeling in Strategy and Venturing;Financial Modeling in Strategy and Venturing;Financial Modeling in Strategy and Venturing;03.11.2016 - 15.12.2016;II (Autumn 2016);5;Markku Maula
-14938;TU-E1090;Research Assignment in Strategy and Venturing;Research Assignment in Strategy and Venturing;Research Assignment in Strategy and Venturing;05.01.2017 - 27.05.2017;I-II, III-V (Autumn 2016, Spring 2017);5;Koen Heimeriks
-14937;TU-E1090;Research Assignment in Strategy and Venturing;Research Assignment in Strategy and Venturing;Research Assignment in Strategy and Venturing;14.09.2016 - 17.12.2016;I-II, III-V (Autumn 2016, Spring 2017);5;Koen Heimeriks
+14939;TU-E1120;Strategic Management of Technology and Innovation;Strategic Management of Technology and Innovation;Strategic Management of Technology and Innovation;13.01.2017 - 19.05.2017;III-V (Spring 2017);5;Ilpo Ervasti, Ilkka Kauranen
+14938;TU-E1090;Research Assignment in Strategy and Venturing;Research Assignment in Strategy and Venturing;Research Assignment in Strategy and Venturing;05.01.2017 - 27.05.2017;I-II, III-V (Autumn 2016, Spring 2017);5;Koenraad Heimeriks
+14937;TU-E1090;Research Assignment in Strategy and Venturing;Research Assignment in Strategy and Venturing;Research Assignment in Strategy and Venturing;14.09.2016 - 17.12.2016;I-II, III-V (Autumn 2016, Spring 2017);5;Koenraad Heimeriks
 14936;TU-E1030;Advanced Case-seminar in Strategy;Advanced Case-seminar in Strategy;Advanced Case-seminar in Strategy;14.09.2016 - 19.10.2016;I (Autumn 2016);5;Timo Vuori
 14935;TU-E1020;Strategies for Growth and Renewal;Strategies for Growth and Renewal;Strategies for Growth and Renewal;09.01.2017 - 27.02.2017;III-IV (Spring 2017);3;Marina Biniari
 14934;TU-E1010;Advanced Strategic Management;Advanced Strategic Management;Advanced Strategic Management;12.09.2016 - 28.10.2016;I (Autumn 2016);5;Robin Gustafsson
@@ -843,8 +879,9 @@
 14931;TU-C9270;Verkostojen perusteet;Introduction to Networks;Introduktion till nätverk;19.09.2016 - 05.12.2016;I-II (syksy 2016);5;Stina Giesecke
 14930;TU-C9260;Tuotantotalouden studio;Studio Course of Industrial Engineering and Management;Studiokurs av produktionsekonomin;12.01.2017 - 27.04.2017;III-V (kevät 2017);5;Stina Giesecke
 14929;TU-C3030;Basics in Research and Development (R & D) Management;Basics in Research and Development (R&D) Management;Basics in Research and Development (R&D) Management;03.01.2017 - 22.05.2017;III-V (Spring 2017) ;3-5;Timo Nyberg, Ilkka Kauranen
-14928;TU-C3021;Managing knowledge and knowledge-intensive organizations;Managing knowledge and knowledge-intensive organizations;Managing knowledge and knowledge-intensive organizations;03.01.2017 - 28.03.2017;III ¿ IV (Spring 2017);5;Eerikki Mäki
+14928;TU-C3021;Managing knowledge and knowledge-intensive organizations;Managing knowledge and knowledge-intensive organizations;Managing knowledge and knowledge-intensive organizations;03.01.2017 - 15.04.2017;III ¿ IV (Spring 2017);5;Eerikki Mäki
 14927;TU-C3010;Projektien suunnittelu ja ohjaus;Introduction to Project Management;Projektplanering och projektstyrning;13.01.2017 - 31.03.2017;III-IV (kevät 2017);5;Karlos Artto
+14926;TU-C2040;Strategy Fieldwork;Strategy Fieldwork;Strategy Fieldwork;09.01.2017 - 19.05.2017;III-V (Spring 2017) ;5;Jens Schmidt
 14925;TU-C2030;Operaatioiden johtamisen projekti;Operations Management Project;Operativ verksamhetsledningsprojekt;09.11.2016 - 07.12.2016;I-II (syksy 2016);5;Timo Seppälä
 14924;TU-C2020;Operaatioiden johtaminen;Operations Management;Operativ verksamhetsledning;14.09.2016 - 21.10.2016;I - II (syksy 2016);5;Timo Seppälä
 14923;TU-C2010;Introduction to Strategic Management;Introduction to Strategic Management;Introduction to Strategic Management;15.09.2016 - 22.12.2016;I-II (Autumn 2016) ;5;Jens Schmidt
@@ -854,13 +891,13 @@
 14919;TU-A1200;Grundkurs i Produktionsekonomi;Introduction to Industrial Management and Engineering, Swedish;Grundkurs i Produktionsekonomi;13.09.2016 - 18.11.2016;I-II (syksy 2016);5;Paul Lillrank
 14918;TU-A1150;Filosofia ja systeemiajattelu;Philosophy and Systems Thinking;Filosofi och system tänkande;18.01.2017 - 31.03.2017;III ¿ IV (kevät 2017);3;Esa Saarinen
 14917;TU-A1140;Itsensä tunteminen ja johtaminen;Leading and Understanding Oneself;Självkännedom och ledarskap;05.01.2017 - 30.03.2017;III ¿ IV (kevät 2017);3;Eerikki Mäki
-14916;TU-A1120;Tuotantotalous 2;Industrial Engineering and Management 2;Produktionsekonomi 2;03.11.2016 - 30.04.2017;II-V (syksy 2016, kevät 2017);5;Ruth Kaila
-14915;TU-A1100;Tuotantotalous 1;Industrial Engineering and Management 1;Produktionsekonomi 1;11.04.2017 - 27.05.2017;I-II, III-IV, V (syksy 2016 ja kevät 2017);5;Paul Lillrank
+14916;TU-A1120;Tuotantotalous 2;Industrial Engineering and Management 2;Produktionsekonomi 2;03.11.2016 - 03.04.2017;II-V (syksy 2016, kevät 2017);5;Ruth Kaila
+14915;TU-A1100;Tuotantotalous 1;Industrial Engineering and Management 1;Produktionsekonomi 1;10.04.2017 - 28.05.2017;I-II, III-IV, V (syksy 2016 ja kevät 2017);5;Paul Lillrank
 14914;TU-A1100;Tuotantotalous 1;Industrial Engineering and Management 1;Produktionsekonomi 1;10.01.2017 - 08.04.2017;I-II, III-IV, V (syksy 2016 ja kevät 2017);5;Paul Lillrank
 14913;TU-A1100;Tuotantotalous 1;Industrial Engineering and Management 1;Produktionsekonomi 1;13.09.2016 - 01.12.2016;I-II, III-IV, V (syksy 2016 ja kevät 2017);5;Paul Lillrank, Tuomo Tanila
 14912;TU-91.1001;Kansantaloustieteen perusteet;Introduction to Economics;Grundkurs i nationalekonomi;14.09.2016 - 16.12.2016;I-II (syksy 2016);5;Hannele Wallenius
 14764;SCI3026.kand;Kandidaatintyö ja seminaari (Informaatioverkostot);Bachelor's Thesis and Seminar (Information Networks);Kandidatarbete och seminarium (Informationsnätverk);10.01.2017 - 27.04.2017;I-II (syksy 2016), III-V (kevät 2017);10;Miia Jaatinen
-14763;SCI3025.kand;Kandidaatintyö ja seminaari (Tuotantotalous);Bachelor's Thesis and Seminar (Industrial Engineering and Management);Kandidatarbete och seminarium (Produktionsekonomi);10.01.2017 - 25.04.2017;I-II (syksy 2016), III-V (kevät 2017);10;Eerikki Mäki
+14763;SCI3025.kand;Kandidaatintyö ja seminaari (Tuotantotalous);Bachelor's Thesis and Seminar (Industrial Engineering and Management);Kandidatarbete och seminarium (Produktionsekonomi);10.01.2017 - 13.05.2017;I-II (syksy 2016), III-V (kevät 2017);10;Eerikki Mäki
 14762;SCI3025.kand;Kandidaatintyö ja seminaari (Tuotantotalous);Bachelor's Thesis and Seminar (Industrial Engineering and Management);Kandidatarbete och seminarium (Produktionsekonomi);13.09.2016 - 15.12.2016;I-II (syksy 2016), III-V (kevät 2017);10;Eerikki Mäki
 11852;TU-E6130;Facilitating Collaboration in Networks;Facilitating Collaboration in Networks;Facilitating Collaboration in Networks;01.08.2015 - 31.07.2016;I-V;5;
 11821;TU-L0020;Statistical Research Methods in IEM: COURSE FEEDBACK;Statistical Research Methods in IEM: COURSE FEEDBACK;Statistical Research Methods in IEM: COURSE FEEDBACK;05.01.2016 - 31.07.2016;III-IV (Spring 2017);3-6;
@@ -868,13 +905,12 @@
 11651;TU-L1010;Theory Building and Research Design in Strategy and Venturing;Theory Building and Research Design in Strategy and Venturing;Theory Building and Research Design in Strategy and Venturing;01.08.2015 - 31.07.2016;III-IV (Spring 2016);5;
 11578;TU-E2090;Research Assignment in Operations and Service Management;Research Assignment in Operations and Service Management;Research Assignment in Operations and Service Management;04.01.2016 - 22.05.2016;I-II, III-V (Autumn 2016 and Spring 2017);5-7;
 11529;TU-E1090;Research Assignment in Strategy and Venturing;Research Assignment in Strategy and Venturing;Research Assignment in Strategy and Venturing;07.01.2016 - 12.02.2016;I-II, III-V (Autumn 2016, Spring 2017);5;
-11490;No;recent activit;>-->
-       ;href="https://mycourses.aalto.fi/auth/shibboleth/index.php";;;;
+11490;;;b>mycourses(at)aalto.f;ou can search course by;;;;
 11246;TU-E4020;High Growth Entrepreneurship with varying content 2, V;High Growth Entrepreneurship with varying content 2, V;High Growth Entrepreneurship with varying content 2, V;12.01.2016 - 14.04.2016;I-II,III-V;1-10;
-10891;;;;;;;
+10891;;;;;;;;
 10840;TU-L1000;Doctoral Seminar in Strategy;Doctoral Seminar in Strategy;Doctoral Seminar in Strategy;22.02.2016 - 20.05.2016;IV-V (Spring 2017);8;
 10832;TU-E6080;Diplomityöseminaari;Diplomityöseminaari;Diplomityöseminaari;07.09.2015 - 20.05.2016;I-V (lukuvuosi 2016-2017);1-2;
-11288;;;;;;;
+11288;;;;;;;;
 10798;TU-L2030;Co-Design in Service Innovation;Co-Design in Service Innovation;Co-Design in Service Innovation;01.08.2015 - 31.07.2016;To be announced later;5-8;
 10797;TU-L2010;Videoanalyysi organisaatioiden yhteiskehittämisen tutkimuksessa;Videoanalyysi organisaatioiden yhteiskehittämisen tutkimuksessa;Videoanalyysi organisaatioiden yhteiskehittämisen tutkimuksessa;07.09.2015 - 14.12.2015;I-II (syksy 2016);5;
 8726;;;b>Teaching Period;b>Credits;01.06.2015 - 31.08.2015;I-II (Syksy 2015), III-V (Kevät 2016);10;
@@ -886,12 +922,14 @@
 9252;TU-A1100;Tuotantotalous 1;Industrial Engineering and Management 1;Produktionsekonomi 1;12.01.2016 - 01.04.2016;I-II, III-IV, V (syksy 2016 ja kevät 2017);5;
 9251;TU-A1100;Tuotantotalous 1;Industrial Engineering and Management 1;Produktionsekonomi 1;11.04.2016 - 20.05.2016;I-II, III-IV, V (syksy 2016 ja kevät 2017);5;
 9253;TU-A1100;Tuotantotalous 1;Industrial Engineering and Management 1;Produktionsekonomi 1;08.09.2015 - 04.12.2015;I-II, III-IV, V (syksy 2016 ja kevät 2017);5;
+9254;TU-A1120;Tuotantotalous 2;Industrial Engineering and Management 2;Produktionsekonomi 2;26.10.2015 - 01.04.2016;II-V (syksy 2016, kevät 2017);5;
 9255;TU-A1140;Itsensä tunteminen ja johtaminen;Leading and Understanding Oneself;Självkännedom och ledarskap;04.01.2016 - 15.04.2016;III ¿ IV (kevät 2017);3;
 9256;TU-A1150;Filosofia ja systeemiajattelu;Philosophy and Systems Thinking;Filosofi och system tänkande;20.01.2016 - 07.04.2016;III ¿ IV (kevät 2017);3;
 9258;TU-A1200;Grundkurs i Produktionsekonomi;Introduction to Industrial Management and Engineering, Swedish;Grundkurs i Produktionsekonomi;08.09.2015 - 04.12.2015;I-II (syksy 2016);5;
 9260;TU-C1010;Ihminen ryhmässä;Individual in groups;Individen i gruppen;09.09.2015 - 02.12.2015;I ¿ II (syksy 2016);5;
 9262;TU-C1020;Creating Value;Creating Value;Creating Value;24.02.2016 - 19.05.2016;IV-V (Spring 2017) ;5;
 9264;TU-C1030;Laskelmat liiketoiminnan päätösten tukena;Managerial accounting and finance for decision-makers;Kalkyler för affärsekonomiska beslut;07.01.2016 - 01.04.2016;III-IV (kevät 2017);5;
+9266;TU-C2010;Introduction to Strategic Management;Introduction to Strategic Management;Introduction to Strategic Management;07.09.2015 - 14.12.2015;I-II (Autumn 2016) ;5;
 9268;TU-C2020;Operations Management;Operations Management;Operativ verksamhetsledning;07.09.2015 - 16.10.2015;I - II (syksy 2016);5;
 9270;TU-C2030;Operations Management Project;Operations Management Project;Operativ verksamhetsledningsprojekt;09.09.2015 - 25.11.2015;I-II (syksy 2016);5;
 9272;TU-C2040;Strategy Fieldwork;Strategy Fieldwork;Strategy Fieldwork;11.01.2016 - 13.05.2016;III-V (Spring 2017) ;5;
@@ -902,7 +940,7 @@
 9283;TU-C9270;Verkostojen perusteet;Introduction to Networks;Introduktion till nätverk;14.09.2015 - 30.11.2015;I-II (syksy 2016);5;
 10035;TU-D2000;Teollisuustalouden esitentit;Pre-requisites for Operations and Service Management;Föberedande tenterna i industriell ekonomi;01.08.2015 - 31.07.2016;I, II, III, IV, V;2-5;
 9286;TU-E1010;Advanced Strategic Management;Advanced Strategic Management;Advanced Strategic Management;07.09.2015 - 19.10.2015;I (Autumn 2016);5;
-9287;;;;;;;
+9287;;;;;;;;
 9288;TU-E1030;Advanced Case-seminar in Strategy;Advanced Case-seminar in Strategy;Advanced Case-seminar in Strategy;07.09.2015 - 16.10.2015;I (Autumn 2016);5;
 9289;TU-E1090;Research Assignment in Strategy and Venturing;Research Assignment in Strategy and Venturing;Research Assignment in Strategy and Venturing;07.09.2015 - 10.12.2015;I-II, III-V (Autumn 2016, Spring 2017);5;
 9290;TU-E1110;Strategic Marketing;Strategic Marketing;Strategic Marketing;22.02.2016 - 20.05.2016;IV-V (Spring 2016);5;
@@ -934,7 +972,9 @@
 9322;TU-E4010;High Growth Entrepreneurship with varying content 1, V;High Growth Entrepreneurship with varying content 1, V;High Growth Entrepreneurship with varying content 1, V;04.01.2016 - 12.02.2016;I-II,III-V;1-10;
 9324;TU-E4030;Entrepreneurial Finance;Entrepreneurial Finance;Entrepreneurial Finance;22.02.2016 - 01.04.2016;IV (Spring 2017);5;
 9325;TU-E4040;Opportunity Prototyping;Opportunity Prototyping;Opportunity Prototyping;08.09.2015 - 13.10.2015;I (Autumn 2016);3;
+9326;TU-E4050;Entrepreneurial Leadership;Entrepreneurial Leadership;Entrepreneurial Leadership;26.10.2015 - 03.12.2015;III (Spring 2017);5;
 9327;TU-E4060;Design & Innovation in Context;Design & Innovation in Context;Design & Innovation in Context;26.10.2015 - 04.12.2015;II (Autumn 2016);6;
+9328;TU-E4070;Entrepreneurial Marketing;Entrepreneurial Marketing;Entrepreneurial Marketing;11.04.2016 - 20.05.2016;V (Spring 2017);5;
 9329;TU-E4080;Managing Innovative Sales;Managing Innovative Sales;Managing Innovative Sales;26.10.2015 - 04.12.2015;II (Autumn 2016);3;
 9330;TU-E5000;Innovation and Project Management;Innovation and Project Management;Innovation and Project Management;12.01.2016 - 11.02.2016;III (Spring 2016);5;
 9332;TU-E5020;Collaborative Innovation Management;Collaborative Innovation Management;Collaborative Innovation Management;22.02.2016 - 20.05.2016;IV (Spring);5;
@@ -945,11 +985,15 @@
 9337;TU-E6130;Facilitating Collaboration in Networks;Facilitating Collaboration in Networks;Facilitating Collaboration in Networks;07.09.2015 - 20.05.2016;I-V;5;
 9338;TU-E6140;Yrityspeli;Business Game;Företagsspel;11.04.2016 - 26.05.2016;I, II, III, IV, V (lukuvuosi 2016-2017);3;
 9339;TU-EV;Johtaminen sosiaali- ja terveydenhuollossa;Healthcare Operations Management;Ledning i social- och hälsövården;28.10.2015 - 03.12.2015;;0;
+9340;TU-L0000;Research Methods in Industrial Engineering and Management;Research Methods in Industrial Engineering and Management;Research Methods in Industrial Engineering and Management;15.09.2015 - 20.01.2016;I-II (Autumn 2016);5;
 9343;TU-L1010;Theory Building and Research Design in Strategy and Venturing;Theory Building and Research Design in Strategy and Venturing;Theory Building and Research Design in Strategy and Venturing;04.01.2016 - 01.04.2016;III-IV (Spring 2016);5;
 9348;TU-L2040;Research Perspectives on Inter-organizational Collaboration;Research Perspectives on Inter-organizational Collaboration;Research Perspectives on Inter-organizational Collaboration;07.09.2015 - 04.12.2015;I-II (Autumn 2016);5;
 8733;SCI3026.kand;Kandidaatintyö ja seminaari (Informaatioverkostot);Bachelor's Thesis and Seminar (Information Networks);Kandidatarbete och seminarium (Informationsnätverk);08.09.2015 - 09.12.2015;I-II (syksy 2016), III-V (kevät 2017);10;
-15621;;;;;;;
-15321;;;;;;;
-15214;;;;;;;
-12141;;;;;;;
-11923;;;;;;;
+3095;;;;;;;;
+9349;TU-L3000;Johtajuuden ja tietojohtamisen jatko-opintoseminaari;Doctoral Seminar in Leadership and Knowledge Management;Fortsättningsseminarium i ledarskap och kunskapshantering;01.08.2016 - 31.07.2017;I ¿ V ( lv 2016-2017);3;
+15828;;;;;;;;
+15621;;;;;;;;
+15321;;;;;;;;
+15214;;;;;;;;
+12141;;;;;;;;
+11923;;;;;;;;

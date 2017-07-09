@@ -21,11 +21,11 @@ for line in f_units:
         had_more = True
         position = 0
         while(had_more):
-            search = 'enrolmenticons"><a href="https://mycourses.aalto.fi/course/view.php?id='
+            search = 'data-courseid="'
             start = content.find(search, position)
             if(start != -1):
                 start += len(search)
-                end = content.find('>', start) - 1
+                end = content.find('"', start)
                 f_out.write(content[start:end] + '\n')
                 position = end
             else:

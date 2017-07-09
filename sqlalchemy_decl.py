@@ -16,15 +16,17 @@ class Course(Base):
     description = Column(String(1000))
     date = Column(String(30))
     period = Column(String(5))
+    credits = Column(String(5))
     rating = Column(Float())
     ratings = Column(Integer(), default=3)
 
-    def __init__(self, id, name, desc, date, period):
+    def __init__(self, id, name, desc, date, period, credits):
         self.id = id
         self.name = name
         self.desc = desc
         self.date = date
         self.period = period
+        self.credits = credits
         self.rating = 3.0
         self.ratings = 0
 
