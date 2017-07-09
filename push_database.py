@@ -1,4 +1,4 @@
-from sqlalchemy_decl import Course, Comment, Base, User1
+from sqlalchemy_decl import Course, Comment, Base, User
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 import re
@@ -11,7 +11,7 @@ def parseRomans(periods):
     result = result.replace('I', '1')
     result = result.replace('V', '5')
     return result
-    
+
 def parsePeriod(periods):
     result = ''
     periods = periods.replace('¿', '-')
