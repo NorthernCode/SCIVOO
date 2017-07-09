@@ -14,7 +14,7 @@ def parseRomans(periods):
 
 def parsePeriod(periods):
     result = ''
-    periods = periods.replace('¿', '-')
+    #periods = periods.replace('¿', '-')
     for char in periods:
         if(char == 'I' or char == 'V' or char == ',' or char == '-'):
             result += char
@@ -36,6 +36,7 @@ def getStartingPeriods(periods):
         elif(starts):
             result += char
     return result
+
 
 engine = create_engine('sqlite:///scivoo_sqlalchemy.db')
 Base.metadata.bind = engine
