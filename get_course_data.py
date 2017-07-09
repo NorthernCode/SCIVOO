@@ -1,5 +1,6 @@
 import urllib.request
 import ssl
+import html2text
 
 ssl._create_default_https_context = ssl._create_unverified_context
 
@@ -106,22 +107,28 @@ for line in f_courses:
         content = html.read()
 
         start = content.find('Osaamistavoitteet&nbsp;</td>')
-        search = '<td><p>'
+        search = '<td>'
         start = content.find(search, start)
         if(start != -1):
             start += len(search)
-            end = content.find('</p>', start) - 1
-            f_out.write(content[start:end] + ';')
+            end = content.find('</td>', start) - 1
+            string = content[start:end]
+            string = html2text.html2text(string)
+            string = string.replace("\n", " ")
+            f_out.write(string + ';')
         else:
             f_out.write(';')
 
         start = content.find('Sisältö&nbsp;</td>')
-        search = '<td><p>'
+        search = '<td>'
         start = content.find(search, start)
         if(start != -1):
             start += len(search)
-            end = content.find('</p>', start) - 1
-            f_out.write(content[start:end] + ';')
+            end = content.find('</td>', start) - 1
+            string = content[start:end]
+            string = html2text.html2text(string)
+            string = string.replace("\n", " ")
+            f_out.write(string + ';')
         else:
             f_out.write(';')
 
