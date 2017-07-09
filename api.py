@@ -53,7 +53,7 @@ def search():
     if (request.forms.get('search') and request.forms.get('period')):
         searchString = '%' + request.forms.get('search') + '%'
         periodString = '%' + request.forms.get('period') + '%'
-        creditstring = '%' + request.forms.get('credit') + '%'
+        #creditString = '%' + request.forms.get('credit') + '%'
         if(request.forms.get('period') == 'Any'):
             data = db.query(Course).filter(or_(Course.id.like(searchString), Course.name.like(searchString))).all()
         else:
