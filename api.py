@@ -35,6 +35,7 @@ def course_info(id):
     item['name'] = data[0].name
     item['description'] = data[0].description
     item['period'] = data[0].period
+    item['credit'] = data[0].credit
     item['rating'] = data[0].rating
     comments = []
     for row in comment_data:
