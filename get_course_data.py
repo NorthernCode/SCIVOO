@@ -115,6 +115,7 @@ for line in f_courses:
             string = content[start:end]
             string = html2text.html2text(string)
             string = string.replace("\n", " ")
+            string = string.replace("&nbsp", " ")
             f_out.write(string + ';')
         else:
             f_out.write(';')
@@ -128,6 +129,7 @@ for line in f_courses:
             string = content[start:end]
             string = html2text.html2text(string)
             string = string.replace("\n", " ")
+            string = string.replace("&nbsp", " ")
             f_out.write(string + ';')
         else:
             f_out.write(';')
