@@ -25,11 +25,14 @@ for line in f_courses:
     search = '>'
     start = content.find(search, start)
 
+    course_id = ''
+
     if(start != -1):
         start += len(search)
         end = content.find('<', start) - 1
         split = content[start:end].split(' ')
         f_out.write(split[0] + ';')
+        course_id = split[0]
         start += len(split[0]) + 1
         f_out.write(content[start:end] + ';')
     else:
@@ -93,7 +96,34 @@ for line in f_courses:
     if(start != -1):
         start += len(search)
         end = content.find('<', start) - 1
-        f_out.write(content[start:end])
+        f_out.write(content[start:end] + ';')
+
+    #WebOodi haku
+    if(course_id != ''):
+        page_url = 'https://oodi.aalto.fi/a/opintjakstied.jsp?html=1&Kieli=1&Tunniste=' + course_id.rstrip()
+        local_filename, headers = urllib.request.urlretrieve(page_url)
+        html = open(local_filename, encoding='utf-8')
+        content = html.read()
+
+        start = content.find('Osaamistavoitteet&nbsp;</td>')
+        search = '<td><p>'
+        start = content.find(search, start)
+        if(start != -1):
+            start += len(search)
+            end = content.find('</p>', start) - 1
+            f_out.write(content[start:end] + ';')
+        else:
+            f_out.write(';')
+
+        start = content.find('Sisältö&nbsp;</td>')
+        search = '<td><p>'
+        start = content.find(search, start)
+        if(start != -1):
+            start += len(search)
+            end = content.find('</p>', start) - 1
+            f_out.write(content[start:end] + ';')
+        else:
+            f_out.write(';')
 
     f_out.write('\n')
 

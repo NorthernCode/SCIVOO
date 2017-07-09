@@ -13,7 +13,8 @@ class Course(Base):
     # Notice that each column is also a normal Python instance attribute.
     id = Column(String(10), primary_key=True)
     name = Column(String(140), nullable=False)
-    description = Column(String(1000))
+    desc_outcome = Column(String(5000))
+    desc_content = Column(String(5000))
     date = Column(String(30))
     period = Column(String(5))
     credit = Column(String(5))
@@ -21,10 +22,11 @@ class Course(Base):
     workload = Column(Float())
     ratings = Column(Integer(), default=3)
 
-    def __init__(self, id, name, desc, date, period, credit):
+    def __init__(self, id, name, desc_outcome, desc_content, date, period, credit):
         self.id = id
         self.name = name
-        self.desc = desc
+        self.desc_outcome = desc_outcome
+        self.desc_content = desc_content
         self.date = date
         self.period = period
         self.credit = credit

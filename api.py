@@ -33,7 +33,8 @@ def course_info(id):
     item = {}
     item['id'] = data[0].id
     item['name'] = data[0].name
-    item['description'] = data[0].description
+    item['desc_outcome'] = data[0].desc_outcome
+    item['desc_content'] = data[0].desc_content
     item['period'] = data[0].period
     item['credit'] = data[0].credit
     item['rating'] = data[0].rating

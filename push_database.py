@@ -56,10 +56,10 @@ for course in f_courses:
     check = db.query(Course).filter(Course.id.like(data[1])).all()
     if(len(check) > 0):
         continue
-    if(len(data) < 8):
-        item = Course(data[1], data[2], '', '', '')
+    if(len(data) < 10):
+        item = Course(data[1], data[2], '', '', '', '', '')
     else:
-        item = Course(data[1], data[2], '', data[5], parsePeriod(data[6]), data[7])
+        item = Course(data[1], data[2], data[8], data[9], data[5], parsePeriod(data[6]), data[7])
     db.add(item)
 
 #Admin User
