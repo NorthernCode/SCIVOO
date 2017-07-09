@@ -18,6 +18,7 @@ class Course(Base):
     period = Column(String(5))
     credit = Column(String(5))
     rating = Column(Float())
+    workload = Column(Float())
     ratings = Column(Integer(), default=3)
 
     def __init__(self, id, name, desc, date, period, credit):
@@ -28,6 +29,7 @@ class Course(Base):
         self.period = period
         self.credit = credit
         self.rating = 3.0
+        self.workload = 3.0
         self.ratings = 0
 
 class Comment(Base):
@@ -37,12 +39,14 @@ class Comment(Base):
     body = Column(String(1000))
     iteration = Column(String(10))
     rating = Column(Integer, nullable=True)
+    workload = Column(Integer, nullable=True)
 
-    def __init__(self, course, body, iteration, rating):
+    def __init__(self, course, body, iteration, rating, workload):
         self.course = course
         self.body = body
         self.iteration = iteration
         self.rating = rating
+        self.workload = workload
 
 class User(Base):
     __tablename__ = 'user'

@@ -37,12 +37,14 @@ def course_info(id):
     item['period'] = data[0].period
     item['credit'] = data[0].credit
     item['rating'] = data[0].rating
+    item['workload'] = data[0].workload
     comments = []
     for row in comment_data:
         comment_item = {}
         comment_item['body'] = row.body
         comment_item['iteration'] = row.iteration
         comment_item['rating'] = row.rating
+        comment_item['workload'] = row.workload
         comments.append(comment_item)
     item['comments'] = comments
 
@@ -50,10 +52,10 @@ def course_info(id):
 
 @post('/search')
 def search():
-    if (request.forms.get('search') and request.forms.get('period')):
+    if (request.forms.get('search') and request.forms.get('period') and request.forms.get('credit')):
         searchString = '%' + request.forms.get('search') + '%'
         periodString = '%' + request.forms.get('period') + '%'
-        #creditString = '%' + request.forms.get('credit') + '%'
+        creditString = '%' + request.forms.get('credit') + '%'
         if(request.forms.get('period') == 'Any'):
             data = db.query(Course).filter(or_(Course.id.like(searchString), Course.name.like(searchString))).all()
         else:
@@ -78,12 +80,18 @@ def search():
 
 @post('/comment/<id>')
 def add_comment(id):
-    if (request.forms.get('body') and request.forms.get('iteration') and request.forms.get('rating')):
+    if (request.forms.get('body') and request.forms.get('iteration') and request.forms.get('rating') and request.forms.get('workload')):
         course_item = db.query(Course).filter(Course.id == id).first()
+
         new_rating = (float(request.forms.get('rating')) + course_item.rating * course_item.ratings) / (course_item.ratings + 1)
         course_item.rating = new_rating
+
+        new_workload = (float(request.forms.get('workload')) + course_item.workload * course_item.ratings) / (course_item.ratings + 1)
+        course_item.workload = new_workload
+
         course_item.ratings = course_item.ratings + 1
-        comment = Comment(id, request.forms.get('body'), request.forms.get('iteration'), request.forms.get('rating'))
+
+        comment = Comment(id, request.forms.get('body'), request.forms.get('iteration'), request.forms.get('rating'), request.forms.get('workload'))
         db.add(comment)
         db.commit()
 
@@ -94,6 +102,7 @@ def add_comment(id):
         comment_item['body'] = row.body
         comment_item['iteration'] = row.iteration
         comment_item['rating'] = row.rating
+        comment_item['workload'] = row.workload
         comments.append(comment_item)
 
     return {'comments':comments}
