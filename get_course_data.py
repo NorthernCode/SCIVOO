@@ -102,6 +102,7 @@ for line in f_courses:
     #WebOodi haku
     if(course_id != ''):
         page_url = 'https://oodi.aalto.fi/a/opintjakstied.jsp?html=1&Kieli=1&Tunniste=' + course_id.rstrip()
+        print(page_url)
         local_filename, headers = urllib.request.urlretrieve(page_url)
         html = open(local_filename, encoding='utf-8')
         content = html.read()
