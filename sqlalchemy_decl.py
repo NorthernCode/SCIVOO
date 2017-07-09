@@ -26,7 +26,7 @@ class Course(Base):
         self.desc = desc
         self.date = date
         self.period = period
-        self.credits = credit
+        self.credit = credit
         self.rating = 3.0
         self.ratings = 0
 
