@@ -53,16 +53,22 @@ def search():
     if (request.forms.get('search') and request.forms.get('period')):
         searchString = '%' + request.forms.get('search') + '%'
         periodString = '%' + request.forms.get('period') + '%'
+        creditstring = '%' + request.forms.get('credit') + '%'
         if(request.forms.get('period') == 'Any'):
             data = db.query(Course).filter(or_(Course.id.like(searchString), Course.name.like(searchString))).all()
         else:
-            data = db.query(Course).filter(and_(or_(Course.id.like(searchString), Course.name.like(searchString)), Course.period.like(periodString))).all()
+            if(request.forms.get('search') == ''):
+                data = db.query(Course).filter(Course.period.like(periodString)).all()
+            else:
+                data = db.query(Course).filter(and_(or_(Course.id.like(searchString), Course.name.like(searchString)), Course.period.like(periodString))).all()
         result = []
         for row in data:
             item = {}
             item['id'] = row.id
             item['name'] = row.name
             item['description'] = row.description
+            item['period'] = row.period
+            item['credit'] = row.credit
             item['rating'] = row.rating
             result.append(item)
 
