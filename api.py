@@ -106,10 +106,10 @@ def login():
 @post('/isadmin')
 def is_admin():
     if (request.forms.get('token')):
-        user = db.query(User).filter(User.token.like(request.forms.get('token')).first()
+        user = db.query(User).filter(User.token.like(request.forms.get('token'))).first()
         if (user):
             if (user.expires > math.floor(time.time())):
-                return {'success':true}
+                return {'success':'true'}
     return {}
 
 @get('/static/<filepath:path>')
