@@ -14,6 +14,14 @@ DBSession = sessionmaker()
 DBSession.bind = engine
 db = DBSession()
 
+def is_admin(request):
+    if (request.forms.get('token')):
+        user = db.query(User).filter(User.token.like(request.forms.get('token'))).first()
+        if (user):
+            if (user.expires > math.floor(time.time())):
+                return True
+    return False
+
 @get('/')
 def default():
     return static_file('index.html', root=(path + '/static-build'))
@@ -42,6 +50,7 @@ def course_info(id):
     comments = []
     for row in comment_data:
         comment_item = {}
+        comment_item['id'] = row.id
         comment_item['body'] = row.body
         comment_item['iteration'] = row.iteration
         comment_item['rating'] = row.rating
@@ -99,6 +108,7 @@ def add_comment(id):
     comments = []
     for row in comment_data:
         comment_item = {}
+        comment_item['id'] = row.id
         comment_item['body'] = row.body
         comment_item['iteration'] = row.iteration
         comment_item['rating'] = row.rating
@@ -120,12 +130,31 @@ def login():
     return {'token':'', 'message':'login failed'}
 
 @post('/isadmin')
-def is_admin():
-    if (request.forms.get('token')):
-        user = db.query(User).filter(User.token.like(request.forms.get('token'))).first()
-        if (user):
-            if (user.expires > math.floor(time.time())):
-                return {'success':'true'}
+def check_admin():
+    if (is_admin(request)):
+        return {'success':'true'}
+    return {}
+
+@delete('/comment/<id>')
+def remove_comment(id):
+    if (is_admin(request)):
+        comment = db.query(Comment).filter(Comment.id == id).all()
+        comment[0].removed = True
+        db.commit()
+
+        course_id = comment[0].course
+        comment_data = db.query(Comment).filter(Comment.course == course_id).all()
+        comments = []
+        for row in comment_data:
+            comment_item = {}
+            comment_item['id'] = row.id
+            comment_item['body'] = row.body
+            comment_item['iteration'] = row.iteration
+            comment_item['rating'] = row.rating
+            comment_item['workload'] = row.workload
+            comments.append(comment_item)
+
+        return {'comments':comments}
     return {}
 
 @get('/static/<filepath:path>')

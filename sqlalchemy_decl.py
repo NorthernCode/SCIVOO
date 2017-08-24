@@ -42,6 +42,7 @@ class Comment(Base):
     iteration = Column(String(10))
     rating = Column(Integer, nullable=True)
     workload = Column(Integer, nullable=True)
+    removed = Column(Boolean, default=False)
 
     def __init__(self, course, body, iteration, rating, workload):
         self.course = course
@@ -49,6 +50,7 @@ class Comment(Base):
         self.iteration = iteration
         self.rating = rating
         self.workload = workload
+        self.removed = False
 
 class User(Base):
     __tablename__ = 'user'
