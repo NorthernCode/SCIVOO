@@ -69,12 +69,21 @@ def search():
         periodString = '%' + request.forms.get('period') + '%'
         creditString = '%' + request.forms.get('credit') + '%'
         if(request.forms.get('period') == 'Any'):
-            data = db.query(Course).filter(or_(Course.id.like(searchString), Course.name.like(searchString))).all()
+            if(request.forms.get('credit') == 'Any'):
+                data = db.query(Course).filter(or_(Course.id.like(searchString), Course.name.like(searchString))).all() #Only Name
+            else:
+                data = db.query(Course).filter(and_(or_(Course.id.like(searchString), Course.name.like(searchString)), Course.credit.like(creditString))).all() #Credit and Name
         else:
             if(request.forms.get('search') == ''):
-                data = db.query(Course).filter(Course.period.like(periodString)).all()
+                if(request.forms.get('credit') == 'Any'):
+                    data = db.query(Course).filter(Course.period.like(periodString)).all() #Only Period
+                else:
+                    data = db.query(Course).filter(and_(Course.period.like(periodString), Course.credit.like(creditString))).all() #Period and Credit
             else:
-                data = db.query(Course).filter(and_(or_(Course.id.like(searchString), Course.name.like(searchString)), Course.period.like(periodString))).all()
+                if(request.forms.get('credit') == 'Any'):
+                    data = db.query(Course).filter(and_(or_(Course.id.like(searchString), Course.name.like(searchString)), Course.period.like(periodString))).all() #Period and Name
+                else:
+                    data = db.query(Course).filter(and_(and_(or_(Course.id.like(searchString), Course.name.like(searchString)), Course.period.like(periodString)), Course.credit.like(creditString))).all() #All fields
         result = []
         for row in data:
             item = {}
