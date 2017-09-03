@@ -19,7 +19,8 @@ def is_admin(request):
         user = db.query(User).filter(User.token.like(request.forms.get('token'))).first()
         if (user):
             if (user.expires > math.floor(time.time())):
-                #renew expires timer
+                user.expires = math.floor(time.time()) + 600
+                db.commit()
                 return True
     return False
 
@@ -38,7 +39,7 @@ def default():
 @get('/course/<id>')
 def course_info(id):
     data = db.query(Course).filter(Course.id.like(id)).all()
-    comment_data = db.query(Comment).filter(Comment.course.like(data[0].id)).all()
+    comment_data = db.query(Comment).filter(and_(Comment.course == data[0].id, Comment.removed == False)).all()
     item = {}
     item['id'] = data[0].id
     item['name'] = data[0].name
@@ -105,7 +106,7 @@ def add_comment(id):
         db.add(comment)
         db.commit()
 
-    comment_data = db.query(Comment).filter(Comment.course == id).all()
+    comment_data = db.query(Comment).filter(and_(Comment.course == course_id, Comment.removed == False)).all()
     comments = []
     for row in comment_data:
         comment_item = {}
@@ -122,8 +123,10 @@ def add_comment(id):
 def login():
     if (request.forms.get('username') and request.forms.get('password')):
         password_hash = hashlib.sha256(str.encode(request.forms.get('password'))).hexdigest()
-        user = db.query(User).filter(and_(User.username.like(request.forms.get('username')), User.password_hash.like(password_hash))).first()
+        user = db.query(User).filter(and_(User.username == request.forms.get('username'), User.password_hash == password_hash)).first()
         if(user):
+            if (user.expires > math.floor(time.time())):
+                return {'token': user.token}
             token = uuid.uuid4().hex + uuid.uuid4().hex
             user.token = token
             user.expires = math.floor(time.time()) + 600
@@ -145,7 +148,7 @@ def remove_comment(id):
         db.commit()
 
         course_id = comment[0].course
-        comment_data = db.query(Comment).filter(Comment.course == course_id).all()
+        comment_data = db.query(Comment).filter(and_(Comment.course == course_id, Comment.removed == False)).all()
         comments = []
         for row in comment_data:
             comment_item = {}
