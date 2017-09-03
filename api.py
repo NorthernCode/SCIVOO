@@ -163,5 +163,5 @@ def remove_comment(id):
 def get_static(filepath):
     return static_file(filepath, root=(path + '/static'))
 
-#run(host='localhost', port=8080, debug=True)
+#run(host='localhost', port=8080, debug=True) #dynamic server
 run(server='cgi', debug=True)
