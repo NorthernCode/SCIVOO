@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-import os, json, hashlib, math, time
+import os, json, hashlib, math, time, uuid
 from bottle import get, post, request, route, run, static_file
 from sqlalchemy_decl import Course, Comment, Base, User
 from sqlalchemy import create_engine, or_, and_, update
@@ -124,7 +124,7 @@ def login():
         password_hash = hashlib.sha256(str.encode(request.forms.get('password'))).hexdigest()
         user = db.query(User).filter(and_(User.username.like(request.forms.get('username')), User.password_hash.like(password_hash))).first()
         if(user):
-            token = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 64);
+            token = uuid.uuid4().hex + uuid.uuid4().hex
             user.token = token
             user.expires = math.floor(time.time()) + 600
             db.commit()
