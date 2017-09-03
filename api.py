@@ -19,6 +19,7 @@ def is_admin(request):
         user = db.query(User).filter(User.token.like(request.forms.get('token'))).first()
         if (user):
             if (user.expires > math.floor(time.time())):
+                #renew expires timer
                 return True
     return False
 
@@ -123,10 +124,11 @@ def login():
         password_hash = hashlib.sha256(str.encode(request.forms.get('password'))).hexdigest()
         user = db.query(User).filter(and_(User.username.like(request.forms.get('username')), User.password_hash.like(password_hash))).first()
         if(user):
-            user.token = '123'
-            user.expires = math.floor(time.time()) + 1800
+            token = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 64);
+            user.token = token
+            user.expires = math.floor(time.time()) + 600
             db.commit()
-            return {'token':'123'}
+            return {'token': token}
     return {'token':'', 'message':'login failed'}
 
 @post('/isadmin')
@@ -135,7 +137,7 @@ def check_admin():
         return {'success':'true'}
     return {}
 
-@delete('/comment/<id>')
+@post('/comment/remove/<id>')
 def remove_comment(id):
     if (is_admin(request)):
         comment = db.query(Comment).filter(Comment.id == id).all()
