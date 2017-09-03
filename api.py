@@ -114,8 +114,8 @@ def add_comment(id):
         comment = Comment(id, request.forms.get('body'), request.forms.get('iteration'), request.forms.get('rating'), request.forms.get('workload'))
         db.add(comment)
         db.commit()
-
-    comment_data = db.query(Comment).filter(and_(Comment.course == course_id, Comment.removed == False)).all()
+        
+    comment_data = db.query(Comment).filter(and_(Comment.course == id, Comment.removed == False)).all()
     comments = []
     for row in comment_data:
         comment_item = {}
