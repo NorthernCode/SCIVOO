@@ -67,7 +67,7 @@ def search():
     if (request.forms.get('search') and request.forms.get('period') and request.forms.get('credit')):
         searchString = '%' + request.forms.get('search') + '%'
         periodString = '%' + request.forms.get('period') + '%'
-        creditString = '%' + request.forms.get('credit') + '%'
+        creditString = '' + request.forms.get('credit') + ''
         if(request.forms.get('period') == 'Any'):
             if(request.forms.get('credit') == 'Any'):
                 data = db.query(Course).filter(or_(Course.id.like(searchString), Course.name.like(searchString))).all() #Only Name
@@ -114,7 +114,7 @@ def add_comment(id):
         comment = Comment(id, request.forms.get('body'), request.forms.get('iteration'), request.forms.get('rating'), request.forms.get('workload'))
         db.add(comment)
         db.commit()
-        
+
     comment_data = db.query(Comment).filter(and_(Comment.course == id, Comment.removed == False)).all()
     comments = []
     for row in comment_data:
