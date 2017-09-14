@@ -92,6 +92,7 @@ def search():
             item['period'] = row.period
             item['credit'] = row.credit
             item['rating'] = row.rating
+            item['workload'] = row.workload
             result.append(item)
 
         return {'search':request.forms.get('search'), 'period':request.forms.get('period'), 'courses':result}
