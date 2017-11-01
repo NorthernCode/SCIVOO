@@ -135,6 +135,7 @@ for line in f_courses:
         else:
             f_out.write(';')
 
+    print("\n")
     f_out.write('\n')
 
 
