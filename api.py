@@ -135,7 +135,7 @@ def login():
             user.expires = math.floor(time.time()) + 600
             db.commit()
             return {'token': token}
-    return {'token':'', 'message':'login failed'}
+    return {'token':'', 'message':'login failed with hash', 'hash': password_hash}
 
 @post('/isadmin')
 def check_admin():
