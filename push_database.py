@@ -1,3 +1,5 @@
+import sys
+sys.path.append('lib')
 from sqlalchemy_decl import Course, Comment, Base, User
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -14,7 +16,6 @@ def parseRomans(periods):
 
 def parsePeriod(periods):
     result = ''
-    #periods = periods.replace('¿', '-')
     for char in periods:
         if(char == 'I' or char == 'V' or char == ',' or char == '-'):
             result += char

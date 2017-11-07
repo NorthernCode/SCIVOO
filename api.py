@@ -1,5 +1,6 @@
 #!/usr/bin/env python
-import os, json, hashlib, math, time, uuid
+import sys, os, json, hashlib, math, time, uuid
+sys.path.append('lib')
 from bottle import get, post, request, route, run, static_file
 from sqlalchemy_decl import Course, Comment, Base, User
 from sqlalchemy import create_engine, or_, and_, update
@@ -27,14 +28,6 @@ def is_admin(request):
 @get('/')
 def default():
     return static_file('index.html', root=(path + '/static-build'))
-
-#@get('/course/<any:path>')
-#def default_course(any):
-#    return static_file('index.html', root=(path + '/static-build'))
-
-#@route('<any:path>', 'OPTIONS')
-#def options_call(any):
-#    return {}
 
 @get('/course/<id>')
 def course_info(id):
@@ -64,26 +57,26 @@ def course_info(id):
 
 @post('/search')
 def search():
-    if (request.forms.get('search') and request.forms.get('period') and request.forms.get('credit')):
+    if(request.forms.get('search') or request.forms.get('period') != 'Any' or request.forms.get('credit') != 'Any'):
         searchString = '%' + request.forms.get('search') + '%'
         periodString = '%' + request.forms.get('period') + '%'
         creditString = '%' + request.forms.get('credit') + '%'
         if(request.forms.get('period') == 'Any'):
             if(request.forms.get('credit') == 'Any'):
-                data = db.query(Course).filter(or_(Course.id.like(searchString), Course.name.like(searchString))).all() #Only Name
+                data = db.query(Course).filter(or_(Course.id.like(searchString), Course.name.like(searchString))).limit(100).all() #Only Name
             else:
-                data = db.query(Course).filter(and_(or_(Course.id.like(searchString), Course.name.like(searchString)), Course.credit.like(creditString))).all() #Credit and Name
+                data = db.query(Course).filter(and_(or_(Course.id.like(searchString), Course.name.like(searchString)), Course.credit.like(creditString))).limit(100).all() #Credit and Name
         else:
             if(request.forms.get('search') == ''):
                 if(request.forms.get('credit') == 'Any'):
-                    data = db.query(Course).filter(Course.period.like(periodString)).all() #Only Period
+                    data = db.query(Course).filter(Course.period.like(periodString)).limit(100).all() #Only Period
                 else:
-                    data = db.query(Course).filter(and_(Course.period.like(periodString), Course.credit.like(creditString))).all() #Period and Credit
+                    data = db.query(Course).filter(and_(Course.period.like(periodString), Course.credit.like(creditString))).limit(100).all() #Period and Credit
             else:
                 if(request.forms.get('credit') == 'Any'):
-                    data = db.query(Course).filter(and_(or_(Course.id.like(searchString), Course.name.like(searchString)), Course.period.like(periodString))).all() #Period and Name
+                    data = db.query(Course).filter(and_(or_(Course.id.like(searchString), Course.name.like(searchString)), Course.period.like(periodString))).limit(100).all() #Period and Name
                 else:
-                    data = db.query(Course).filter(and_(and_(or_(Course.id.like(searchString), Course.name.like(searchString)), Course.period.like(periodString)), Course.credit.like(creditString))).all() #All fields
+                    data = db.query(Course).filter(and_(and_(or_(Course.id.like(searchString), Course.name.like(searchString)), Course.period.like(periodString)), Course.credit.like(creditString))).limit(100).all() #All fields
         result = []
         for row in data:
             item = {}
@@ -97,7 +90,7 @@ def search():
 
         return {'search':request.forms.get('search'), 'period':request.forms.get('period'), 'courses':result}
     else:
-        return {'search':'', 'courses':[]}
+	return {'search':"", 'courses':[]}
 
 @post('/comment/<id>')
 def add_comment(id):
@@ -177,4 +170,4 @@ def get_static(filepath):
     return static_file(filepath, root=(path + '/static'))
 
 #run(host='localhost', port=8080, debug=True) #dynamic server
-run(server='cgi', debug=True)
+run(server='cgi', debug=False)

@@ -1,5 +1,6 @@
 import os
 import sys
+sys.path.append('lib')
 from sqlalchemy import Column, ForeignKey, Integer, String, Float, Boolean
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
