@@ -61,22 +61,25 @@ def search():
         searchString = '%' + request.forms.get('search') + '%'
         periodString = '%' + request.forms.get('period') + '%'
         creditString = '%' + request.forms.get('credit') + '%'
+        startFrom = 0
+        if(request.forms.get('offset')):
+            startFrom = int(request.forms.get('offset'))
         if(request.forms.get('period') == 'Any'):
             if(request.forms.get('credit') == 'Any'):
-                data = db.query(Course).filter(or_(Course.id.like(searchString), Course.name.like(searchString))).limit(100).all() #Only Name
+                data = db.query(Course).filter(or_(Course.id.like(searchString), Course.name.like(searchString))).limit(50).offset(startFrom).all() #Only Name
             else:
-                data = db.query(Course).filter(and_(or_(Course.id.like(searchString), Course.name.like(searchString)), Course.credit.like(creditString))).limit(100).all() #Credit and Name
+                data = db.query(Course).filter(and_(or_(Course.id.like(searchString), Course.name.like(searchString)), Course.credit.like(creditString))).limit(50).offset(startFrom).all() #Credit and Name
         else:
             if(request.forms.get('search') == ''):
                 if(request.forms.get('credit') == 'Any'):
-                    data = db.query(Course).filter(Course.period.like(periodString)).limit(100).all() #Only Period
+                    data = db.query(Course).filter(Course.period.like(periodString)).limit(50).offset(startFrom).all() #Only Period
                 else:
-                    data = db.query(Course).filter(and_(Course.period.like(periodString), Course.credit.like(creditString))).limit(100).all() #Period and Credit
+                    data = db.query(Course).filter(and_(Course.period.like(periodString), Course.credit.like(creditString))).limit(50).offset(startFrom).all() #Period and Credit
             else:
                 if(request.forms.get('credit') == 'Any'):
-                    data = db.query(Course).filter(and_(or_(Course.id.like(searchString), Course.name.like(searchString)), Course.period.like(periodString))).limit(100).all() #Period and Name
+                    data = db.query(Course).filter(and_(or_(Course.id.like(searchString), Course.name.like(searchString)), Course.period.like(periodString))).limit(50).offset(startFrom).all() #Period and Name
                 else:
-                    data = db.query(Course).filter(and_(and_(or_(Course.id.like(searchString), Course.name.like(searchString)), Course.period.like(periodString)), Course.credit.like(creditString))).limit(100).all() #All fields
+                    data = db.query(Course).filter(and_(and_(or_(Course.id.like(searchString), Course.name.like(searchString)), Course.period.like(periodString)), Course.credit.like(creditString))).limit(50).offset(startFrom).all() #All fields
         result = []
         for row in data:
             item = {}
