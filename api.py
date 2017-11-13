@@ -68,7 +68,7 @@ def search():
             startFrom = int(request.forms.get('offset'))
 
         if(request.forms.get('sort')):
-            sortBy = int(request.forms.get('sort'))
+            sortBy = request.forms.get('sort')
 
         if(request.forms.get('period') == 'Any'):
             if(request.forms.get('credit') == 'Any'):
