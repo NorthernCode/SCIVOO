@@ -186,8 +186,14 @@ def get_stats():
             comments[str(row.course)] = 1
 
     output = {}
-    output['total'] = len(comment_data)
+    output['labels'] = len(comment_data)
     output['comments'] = comments
+    output['labels'] = []
+    output['datasets'] = {}
+    output['datasets']['data'] = []
+    for key, value in comments.iteritems():
+         output['labels'].append(key)
+         output['datasets']['data'].append(value)
     return output
         
 
