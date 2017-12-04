@@ -180,4 +180,4 @@ def get_static(filepath):
     return static_file(filepath, root=(path + '/static'))
 
 #run(host='localhost', port=8080, debug=True) #dynamic server
-run(server='cgi', debug=False)
+run(server='cgi', debug=True)
