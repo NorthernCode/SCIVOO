@@ -179,11 +179,11 @@ def remove_comment(id):
 def get_stats():
     comment_data = db.query(Comment).filter(Comment.removed == False).all()
     comments = {}
-    #for row in comment_data:
-        #if (comments[str(row.course)]):
-        #    comments[str(row.course)] = comments[str(row.course)] + 1
-        #else:
-        #    comments[str(row.course)] = 1
+    for row in comment_data:
+        if (comments.get(str(row.course))):
+            comments[str(row.course)] = comments[str(row.course)] + 1
+        else:
+            comments[str(row.course)] = 1
 
     output = {}
     output['total'] = len(comment_data)
