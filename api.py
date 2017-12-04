@@ -59,7 +59,7 @@ def course_info(id):
 @post('/search')
 def search():
     if(request.forms.get('search') or request.forms.get('period') != 'Any' or request.forms.get('credit') != 'Any'):
-        searchString = '%' + request.forms.get('search') + '%'
+        searchString = '%' + request.forms.get('search').decode('utf-8') + '%'
         periodString = '%' + request.forms.get('period') + '%'
         creditString = '%' + request.forms.get('credit') + '%'
         startFrom = 0
