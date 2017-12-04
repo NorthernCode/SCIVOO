@@ -188,7 +188,7 @@ def get_stats():
     output = {}
     output['total'] = len(comment_data)
     output['comments'] = comments
-    return comments
+    return output
         
 
 
