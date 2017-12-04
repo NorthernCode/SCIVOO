@@ -10,6 +10,7 @@ from sqlalchemy.orm import sessionmaker
 path = os.getcwd()
 
 engine = create_engine('sqlite:///scivoo_sqlalchemy.db')
+engine.raw_connection().connection.text_factory = str
 Base.metadata.bind = engine
 
 DBSession = sessionmaker()
