@@ -174,21 +174,6 @@ def remove_comment(id):
 
         return {'comments':comments}
     return {}
-
-@get('/stats')
-def get_stats():
-    comment_data = db.query(Comment).filter(Comment.removed == False)).all()
-    comments = {}
-    for row in comment_data:
-        if(comments['id']){
-            comments['id'] = comments['id'] + 1
-        }else{
-            comments['id'] = 1
-        }
-    output = {}
-    output['total'] = len(comment_data)
-    output['comments'] = comments
-    return comments
         
 
 
