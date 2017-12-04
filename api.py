@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 import sys, os, json, hashlib, math, time, uuid
 sys.path.append('lib')
 from bottle import get, post, request, route, run, static_file
