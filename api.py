@@ -115,7 +115,7 @@ def add_comment(id):
 
         course_item.ratings = course_item.ratings + 1
 
-        comment = Comment(id, unicode(request.forms.get('body')), request.forms.get('iteration'), request.forms.get('rating'), request.forms.get('workload'))
+        comment = Comment(id, request.forms.get('body').decode('utf-8'), request.forms.get('iteration'), request.forms.get('rating'), request.forms.get('workload'))
         db.add(comment)
         db.commit()
 
