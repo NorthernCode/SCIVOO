@@ -180,10 +180,10 @@ def get_stats():
     comment_data = db.query(Comment).filter(Comment.removed == False).all()
     comments = {}
     for row in comment_data:
-        if (comments[row.course]):
-            comments[row.course] = comments[row.course] + 1
+        if (comments[str(row.course)]):
+            comments[str(row.course)] = comments[str(row.course)] + 1
         else:
-            comments[row.course] = 1
+            comments[str(row.course)] = 1
 
     output = {}
     output['total'] = len(comment_data)
